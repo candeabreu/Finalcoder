@@ -4,50 +4,18 @@
     padding: 0%;
 }
 
-
 /* HEADER */
 
-.encabezado {
+.navNuevo {
     background-color: #F6FFA4;
-    padding: 20px 0;
-    font-size: 18px;
-    display: flex;
-    justify-content: space-between;
-    align-content: flex-end;
-    border-bottom: solid #FFFDDE;
-
-}
-
-.logoPrincipal {
-    margin-left: 15px;
-    display: flex;
-    justify-content: flex-start;
-    align-content: center;
-    width: 120px;
-    height: 85px
-}
-/* ZONA NAVEGABLE */
-
-.navMenu {
-    display: flex;
-    align-content: flex-end;
-}
-
-.listaMenu {
     font-family: 'Text Me One', sans-serif;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-content: flex-end;
-
+    font-size: 20px;
+    
 }
 
-.listaMenu li {
-    padding: 15px;
-    color: white;
-    display: flex;
-    align-content: flex-end;
-
+.logoNavbar {
+    width: 140px;
+    height: 100px;
 }
 
 /* MAIN INICIO */
@@ -64,22 +32,13 @@
     right: 5%;
 }
 
-.contenido {
-    overflow: hidden;
-
-}
-
-.subtituloInicio {
+.tituloInicio {
     color: black;
     text-align: center;
     font-size: 20px;
     font-family: "tipografia2";
-    background-image: url(imagenes/fondo3.png);
-    background-size: cover;
-    width: 100%;
-    height: 750px;
     letter-spacing: 5px;
-    padding: 30px;
+    
 }
 
 /*FOOTER*/
@@ -89,8 +48,8 @@
     font-size: 17px;
     text-align: center;
     color: black;
-    height: 150px;
     border-top: solid #FFFDDE;
+    height: auto;
 
 }
 
@@ -107,7 +66,7 @@
     justify-content: center;
     align-content: center;
     overflow: hidden;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 .instagram {
@@ -267,33 +226,6 @@
 
 @media screen and (max-width:450px) {
 
-    /* ENCABEZADO*/
-     
-    .encabezado {
-   
-        width: 92vw;
-        font-size: 10px;
-        max-height: 85px;
-        
-        
-    }
-   
-    .logoPrincipal {
-       margin-left: 9px;
-       display: flex;
-       justify-content: flex-start;
-       align-content: center;
-       width: 60px;
-       height: 43px
-   }
-   
-   .listaMenu li {
-       padding: 5px;
-       position: relative;
-       right: 50px;
-       top: 15px;
-   }
-   
    /* FOOTER MOBILE */
    
    .pieDePagina {
@@ -302,26 +234,28 @@
        font-size: 15px;
        text-align: center;
        color: black;
-       max-width: 450px;
-       width: 92vw;
+       width: 100vw;
+       height: auto;
        
        }
    
    .tituloContacto {
-       width: 80vw
+    position: relative;
+    left: 1%;
    }
    
    .textoDeContacto{
         display: flex;
         justify-content: center;
-        width: 80vw;
+        position: relative;
+       left: 1%;
     }
    
    .logosPieDePagina {
-       width: 20px;
-       height: 20px;
+       width: 17px;
+       height: 17px;
        position: relative;
-       right: 50px;
+       left: 70%;
    }
    
    /* MAIN INDEX MOBILE */
