@@ -1,0 +1,429 @@
+/* RESETEO UNIVERSAL*/
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+
+/* HEADER */
+
+.encabezado {
+    background-color: #F6FFA4;
+    padding: 20px 0;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+    border-bottom: solid #FFFDDE;
+
+}
+
+.logoPrincipal {
+    margin-left: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    width: 120px;
+    height: 85px
+}
+/* ZONA NAVEGABLE */
+
+.navMenu {
+    display: flex;
+    align-content: flex-end;
+}
+
+.listaMenu {
+    font-family: 'Text Me One', sans-serif;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+
+}
+
+.listaMenu li {
+    padding: 15px;
+    color: white;
+    display: flex;
+    align-content: flex-end;
+
+}
+
+/* MAIN INICIO */
+@font-face {
+    font-family: "tipografia2";
+    src: url(tipografias/tipografia2.woff);
+}
+
+.logoWapp2 {
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
+
+.contenido {
+    overflow: hidden;
+
+}
+
+.subtituloInicio {
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    font-family: "tipografia2";
+    background-image: url(imagenes/fondo3.png);
+    background-size: cover;
+    width: 100%;
+    height: 750px;
+    letter-spacing: 5px;
+    padding: 30px;
+}
+
+/*FOOTER*/
+.pieDePagina {
+    background-color: #F6FFA4;
+    font-family: 'Text Me One', sans-serif;
+    font-size: 17px;
+    text-align: center;
+    color: black;
+    height: 150px;
+    border-top: solid #FFFDDE;
+
+}
+
+.textoDeContacto {
+    padding-top: 15px;
+}
+
+.tituloContacto {
+    padding-top: 15px;
+}
+
+.logosDeContacto {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+    padding-top: 30px;
+}
+
+.instagram {
+    width: 35px;
+    height: 35px;
+}
+
+.facebook {
+    width: 35px;
+    height: 35px;
+}
+
+.whatsapp {
+    width: 35px;
+    height: 35px;
+}
+
+/*NOSOTROS*/
+
+/*MAIN-NOSOTROS*/
+.contenidoPrincipal {
+    display: flex;
+    justify-content: center;
+    background-image: url(imagenes/fondonuevoNosotros.png);
+    background-size: cover;
+    width: 100%;
+    height: 750px;
+}
+
+.titulo {
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    font-family: "tipografia2";
+    padding: 10px;
+    position: relative;
+    top: 35px;
+    
+}
+
+.presentacionNosotros {
+
+    color: black;
+    padding: 10px;
+    font-size: 25px;
+    font-family: 'Text Me One', sans-serif;
+    position: relative;
+    top: 70px;
+    text-align: center;
+    width: 70vw;
+    
+}
+
+/*PRODUCTOS*/
+
+/* MAIN PRODUCTOS */
+
+.mainProductos {
+    background-color: #FDD7AA;
+    width: auto;
+    height: auto;
+}
+
+.tituloProductos {
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    font-family: "tipografia2";
+    padding-top: 10px;
+}
+
+/*GALERIA DE PRODUCTOS-GRID*/
+
+.galeriaProductos {
+    width: auto;
+    height: auto;
+    background-color: #FDD7AA;
+    display: grid;
+    grid-template-rows: 380px 380px 380px;
+    grid-template-columns: 380px 380px 380px;
+    justify-content: center;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 20px;
+    
+}
+
+.productosItem {
+    width: 350px;
+    height: 350px;
+    -webkit-box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.49);
+    -moz-box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.49);
+    box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.49);
+}
+
+/* MAIN ALQUILERDEESPACIOS*/
+
+.mainAlquilerDeEspacios {
+    background-color: #FDD7AA;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    display: grid;
+}
+
+.tituloAlquilerDeEspacios {
+    text-align: center;
+    font-size: 35px;
+    font-family: "tipografia2";
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.subtituloAlquiler {
+    font-size: 20px;
+    font-family: 'Text Me One', sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.titulosEspaciosDeAlquiler {
+    text-align: center;
+    font-size: 15px;
+    font-family: "tipografia2";
+    padding: 20px;
+
+
+}
+
+.fotosAlquiler {
+    width: 300px;
+    height: 300px;
+    -webkit-box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.49);
+    -moz-box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.49);
+    box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.49);
+}
+
+/*GALERIA ALQUILER DE ESPACIOS- GRID*/
+
+.galeriaAlquiler {
+    display: grid;
+    grid-template-columns: 310px 310px 310px;
+    grid-template-rows: 310px 310px;
+    justify-content: center;
+
+}
+
+/*CONTACTO*/
+
+
+/*RESPONSIVE MOBILE */
+
+@media screen and (max-width:450px) {
+
+    /* ENCABEZADO*/
+     
+    .encabezado {
+   
+        width: 92vw;
+        font-size: 10px;
+        max-height: 85px;
+        
+        
+    }
+   
+    .logoPrincipal {
+       margin-left: 9px;
+       display: flex;
+       justify-content: flex-start;
+       align-content: center;
+       width: 60px;
+       height: 43px
+   }
+   
+   .listaMenu li {
+       padding: 5px;
+       position: relative;
+       right: 50px;
+       top: 15px;
+   }
+   
+   /* FOOTER MOBILE */
+   
+   .pieDePagina {
+       background-color: #F6FFA4;
+       font-family: 'Text Me One', sans-serif;
+       font-size: 15px;
+       text-align: center;
+       color: black;
+       max-width: 450px;
+       width: 92vw;
+       
+       }
+   
+   .tituloContacto {
+       width: 80vw
+   }
+   
+   .textoDeContacto{
+        display: flex;
+        justify-content: center;
+        width: 80vw;
+    }
+   
+   .logosPieDePagina {
+       width: 20px;
+       height: 20px;
+       position: relative;
+       right: 50px;
+   }
+   
+   /* MAIN INDEX MOBILE */
+   
+   .contenido{
+   
+       max-width: 450px;
+       width: 93vw;
+   }
+   
+    .subtituloInicio {
+        font-size: 10px;
+        border: transparent;
+        width: 93vw;
+        position: relative;
+        right: 50px;
+        background-image: url(imagenes/fondoMobileIndex.png);
+        background-size: cover;
+        
+    }
+   
+    .logoWapp2 {
+   
+        width: 30px;
+        height: 30px;
+        position: fixed;
+        bottom: 0%;
+        right: 98px
+    }
+   
+   /* NOSOTROS MOBILE */
+   
+   .contenidoPrincipal {
+       width: 93vw;
+       background-image: url(imagenes/fondonosotrosMobile.png);
+       padding: 0%;
+   
+   }
+   
+   .titulo {
+       font-size: 20px;
+   }
+   
+   .presentacionNosotros {
+       font-size: 20px;
+   }
+   
+   /* PRODUCTOS MOBILE */
+   
+   .galeriaProductos {
+       display: grid;
+       grid-template-columns: 1fr;
+       grid-template-rows: 1fr;
+       width: 93vw;
+       
+   }
+   
+   .productosItem {
+    width: 350px;
+    height: 350px;
+   
+   }
+   .tituloProductos {
+       font-size: 20px;
+   }
+   
+   /* ALQUILER DE ESPACIOS MOBILE */
+   
+   .tituloAlquilerDeEspacios {
+       font-size: 18px;
+       position: relative;
+       right: 15px;
+       
+       
+       }
+       .subtituloAlquiler {
+           font-size: 15px;
+           text-align: center;
+           width: 90vw;
+           position: relative;
+           left: 208px;
+       }
+       
+       .titulosEspaciosDeAlquiler {
+          
+           font-size: 10px;
+           width: 196vw;
+           position: relative;
+           right: 12px;
+           
+       }
+       
+       .galeriaAlquiler {
+           display: grid;
+           grid-template-columns: 1fr;
+           grid-template-rows: 1fr;
+           grid-gap: 10px;
+           justify-items: center;
+           position: relative;
+           right: 12px;
+           
+       }
+   
+    }
+   
