@@ -13,6 +13,11 @@
     
 }
 
+.opcionesMenu {
+    display: flex;
+    justify-content: end;
+}
+
 .logoNavbar {
     width: 140px;
     height: 100px;
@@ -32,14 +37,29 @@
     right: 5%;
 }
 
+
 .tituloInicio {
-    color: black;
+    color: white;
     text-align: center;
     font-size: 20px;
     font-family: "tipografia2";
     letter-spacing: 5px;
+    line-height: 50px;
     
 }
+
+.carousel-caption {
+    position: absolute; 
+    right: 15%;
+    top: 5%; /* Cambiar bottom por top y los píxeles que necesites */
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+
+}
+
 
 /*FOOTER*/
 .pieDePagina {
@@ -222,9 +242,14 @@
 /*CONTACTO*/
 
 
-/*RESPONSIVE MOBILE */
+/* RESPONSIVE MOBILE */
 
 @media screen and (max-width:450px) {
+
+    /* HEADER */
+    .opcionesMenu {
+        justify-content: start;
+    }
 
    /* FOOTER MOBILE */
    
@@ -281,15 +306,14 @@
    
         width: 30px;
         height: 30px;
-        position: fixed;
-        bottom: 0%;
-        right: 98px
+        bottom: 2%;
+        right: 5%;
     }
    
    /* NOSOTROS MOBILE */
    
    .contenidoPrincipal {
-       width: 93vw;
+       width: 100vw;
        background-image: url(imagenes/fondonosotrosMobile.png);
        padding: 0%;
    
@@ -309,14 +333,16 @@
        display: grid;
        grid-template-columns: 1fr;
        grid-template-rows: 1fr;
-       width: 93vw;
-       
+       width: 100vw;
+       padding: 10%;
+    
    }
    
    .productosItem {
     width: 350px;
     height: 350px;
-   
+    display: flex;
+    
    }
    .tituloProductos {
        font-size: 20px;
