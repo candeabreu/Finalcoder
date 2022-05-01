@@ -7,7 +7,7 @@
 /* HEADER */
 
 .navNuevo {
-    background-color: #F6FFA4;
+    background-image: linear-gradient(#FFB2A6 , #FFF89A);
     font-family: 'Text Me One', sans-serif;
     font-size: 20px;
 
@@ -64,7 +64,7 @@
 
 /*FOOTER*/
 .pieDePagina {
-    background-color: #F6FFA4;
+    background-image: linear-gradient(#FFB2A6 , #FFF89A);
     font-family: 'Text Me One', sans-serif;
     font-size: 17px;
     text-align: center;
