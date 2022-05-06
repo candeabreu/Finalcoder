@@ -7,7 +7,7 @@
 /* HEADER */
 
 .navNuevo {
-    background-color:  #FFF89A;
+    background-color: #FFF89A;
     font-family: 'Text Me One', sans-serif;
     font-size: 20px;
     border-bottom: solid #FFFDDE;
@@ -17,7 +17,7 @@
 .opcionesMenu {
     display: flex;
     justify-content: end;
-   
+
 }
 
 .logoNavbar {
@@ -54,7 +54,6 @@
     position: absolute;
     right: 15%;
     top: 5%;
-    /* Cambiar bottom por top y los píxeles que necesites */
     left: 15%;
     z-index: 10;
     padding-top: 20px;
@@ -63,10 +62,9 @@
 
 }
 
-
 /*FOOTER*/
 .pieDePagina {
-    background-color:  #FFF89A;
+    background-color: #FFF89A;
     font-family: 'Text Me One', sans-serif;
     font-size: 17px;
     text-align: center;
@@ -117,7 +115,7 @@
     background-size: cover;
     width: 100%;
     height: 750px;
-    
+
 }
 
 .titulo {
@@ -142,7 +140,7 @@
     top: 70px;
     text-align: center;
     width: 55vw;
-    background-color:  #fcfbb2b0;
+    background-color: #fcfbb2b0;
 
 }
 
@@ -151,7 +149,7 @@
 /* MAIN PRODUCTOS */
 
 .mainProductos {
-    background-color:#FCF7BB;
+    background-color: #FCF7BB;
     width: auto;
     height: auto;
 }
@@ -163,7 +161,7 @@
     font-size: 20px;
     font-family: "tipografia2";
     padding-top: 20px;
-    
+
 }
 
 /*GALERIA DE PRODUCTOS-GRID*/
@@ -198,7 +196,7 @@
     justify-content: center;
     height: auto;
     display: grid;
-    
+
 }
 
 .subtituloAlquiler {
@@ -313,7 +311,7 @@
 
     .presentacionNosotros {
         font-size: 20px;
-        background-color:  #fcd9b2ab;
+        background-color: #fcd9b2ab;
         width: 66vw;
     }
 
@@ -458,48 +456,48 @@
         padding-top: 5%;
     }
 
-/* ALQUILER DE ESPACIOS TABLET */
+    /* ALQUILER DE ESPACIOS TABLET */
 
-.tituloAlquilerDeEspacios {
-    font-size: 18px;
-    position: relative;
-    right: 0px;
-    line-height: 2;
-}
+    .tituloAlquilerDeEspacios {
+        font-size: 18px;
+        position: relative;
+        right: 0px;
+        line-height: 2;
+    }
 
-.subtituloAlquiler {
-    font-size: 15px;
-    text-align: center;
-    width: 95vw;
-    position: relative;
-    left: 0px;
-}
+    .subtituloAlquiler {
+        font-size: 15px;
+        text-align: center;
+        width: 95vw;
+        position: relative;
+        left: 0px;
+    }
 
-.titulosEspaciosDeAlquiler {
+    .titulosEspaciosDeAlquiler {
 
-    font-size: 10px;
-    width: 100vw;
-    position: relative;
-    right: 12px;
-    line-height: 2;
+        font-size: 10px;
+        width: 100vw;
+        position: relative;
+        right: 12px;
+        line-height: 2;
 
-}
+    }
 
-.fotosAlquiler {
-    width: 180px;
-    height: 180px;
-}
+    .fotosAlquiler {
+        width: 180px;
+        height: 180px;
+    }
 
-.galeriaAlquiler {
-    display: grid;
-    grid-template-columns: 200px 200px 200px ;
-    grid-template-rows: 200px 200px 200px;
-    grid-gap: 10px;
-    justify-items: center;
-    position: relative;
-    right: 12px;
+    .galeriaAlquiler {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: 200px 200px 200px;
+        grid-gap: 10px;
+        justify-items: center;
+        position: relative;
+        right: 12px;
 
-}
+    }
 
 }
 
