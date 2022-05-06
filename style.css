@@ -25,6 +25,12 @@
     height: 100px;
 }
 
+/* PSEUDOCLASES OPCIONES MENU */
+
+.opcionesNav:hover {
+    text-decoration: underline;
+}
+
 /* MAIN INICIO */
 @font-face {
     font-family: "tipografia2";
@@ -50,7 +56,7 @@
 
 }
 
-.carousel-caption {
+.tituloCarousel {
     position: absolute;
     right: 15%;
     top: 5%;
@@ -60,6 +66,15 @@
     padding-bottom: 20px;
     color: #fff;
 
+}
+
+/* ANIMACIONES TITULO INDEX*/
+
+.tituloInicio:hover {
+    letter-spacing: 0%;
+    font-size: 15px;
+    transition: all 2s;
+    transform: scale(2)
 }
 
 /*FOOTER*/
@@ -499,14 +514,4 @@
 
     }
 
-}
-
-
-/* ANIMACIONES TITULO INDEXGIT */
-
-.tituloInicio:hover {
-    letter-spacing: 0%;
-    font-size: 15px;
-    transition: all 2s;
-    transform: scale(2)
 }
