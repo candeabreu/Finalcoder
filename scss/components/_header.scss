@@ -1,0 +1,36 @@
+header {
+    .navNuevo {
+        background-color: #FFF89A;
+        font-family: 'Text Me One', sans-serif;
+        font-size: 20px;
+        border-bottom: solid #FFFDDE;
+        display: flex;
+
+        .container-fluid {
+
+            .logoNavbar {
+                width: 140px;
+                height: 100px;
+
+                .opcionesMenu {
+                    display: flex;
+                    justify-items: end;
+
+
+                }
+
+            }
+        }
+    }
+}
+
+.navbar-nav {
+
+    .opcionesNav {
+
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

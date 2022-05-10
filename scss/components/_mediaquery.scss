@@ -1,0 +1,26 @@
+/* RESPONSIVE MOBILE */
+
+@media screen and (max-width:450px) {
+    header {
+        .navNuevo {
+
+
+            .container-fluid {
+
+                .logoNavbar {
+                    width: 70px;
+                    height: 50px;
+
+                    .opcionesMenu {
+                        display: flex;
+                        justify-content: start;
+
+
+                    }
+
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,35 @@
+.pieDePagina {
+    background-color: #FFF89A;
+    font-family: 'Text Me One', sans-serif;
+    font-size: 17px;
+    text-align: center;
+    color: black;
+    border-top: solid #FFFDDE;
+    height: auto;
+    width: 100vw;
+
+    .tituloDeContacto {
+        padding-top: 15px;
+
+        .textoDeContacto {
+            padding-top: 15px;
+
+        }
+    }
+
+}
+
+/* logos redes sociales */
+
+.logosDeContacto {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+    padding-top: 20px;
+
+    .logosIndividuales {
+        width: 35px;
+        height: 35px;
+    }
+}

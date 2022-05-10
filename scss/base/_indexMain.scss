@@ -1,0 +1,36 @@
+/* FUENTES */
+@font-face {
+    font-family: "tipografia2";
+    src: url(tipografias/tipografia2.woff);
+}
+
+/* Carrusel */
+
+.tituloCarousel {
+    position: absolute;
+    right: 15%;
+    top: 5%;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+
+    .tituloInicio {
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        font-family: "tipografia2";
+        letter-spacing: 5px;
+        line-height: 50px;
+
+        /* ANIMACIONES TITULO INDEX*/
+
+        &:hover {
+            letter-spacing: 0%;
+            font-size: 15px;
+            transition: all 2s;
+            transform: scale(2)
+        }
+    }
+}

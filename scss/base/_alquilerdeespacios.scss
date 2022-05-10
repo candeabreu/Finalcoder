@@ -1,0 +1,48 @@
+/*MAIN ALQUILER DE ESPACIOS*/
+
+.mainAlquilerDeEspacios {
+    background-color: #FCF7BB;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    display: grid;
+
+    div {
+        .subtituloAlquiler {
+            font-size: 20px;
+            font-family: 'Text Me One', sans-serif;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+
+
+        }
+    }
+}
+
+.galeria {
+    .titulosEspaciosDeAlquiler {
+        text-align: center;
+        font-size: 12px;
+        font-family: "tipografia2";
+        padding: 15px;
+        color: black;
+    }
+}
+/*GALERIA ALQUILER DE ESPACIOS GRID*/
+
+.galeriaAlquiler {
+    display: grid;
+    grid-template-columns: 310px 310px 310px;
+    grid-template-rows: 310px 310px;
+    justify-content: center;
+
+    .fotosAlquiler {
+        width: 300px;
+        height: 300px;
+        -webkit-box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.49);
+        -moz-box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.49);
+        box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.49);
+    }
+}
