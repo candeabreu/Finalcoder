@@ -1,19 +1,21 @@
+/*FOOTER*/
+
 .pieDePagina {
-    background-color: #FFF89A;
+
+    background-color: #F6FFA4;
     font-family: 'Text Me One', sans-serif;
     font-size: 17px;
     text-align: center;
     color: black;
+    height: 150px;
     border-top: solid #FFFDDE;
-    height: auto;
-    width: 100vw;
+    max-width: 100vw;
 
-    .tituloDeContacto {
+    .tituloContacto {
         padding-top: 15px;
 
-        .textoDeContacto {
+        .tituloDeContacto {
             padding-top: 15px;
-
         }
     }
 

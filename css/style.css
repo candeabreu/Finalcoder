@@ -11,7 +11,7 @@ header .navNuevo .container-fluid .logoNavbar {
 }
 header .navNuevo .container-fluid .logoNavbar .opcionesMenu {
   display: flex;
-  justify-items: end;
+  justify-content: end;
 }
 
 .navbar-nav .opcionesNav:hover {
@@ -33,20 +33,21 @@ header .navNuevo .container-fluid .logoNavbar .opcionesMenu {
   right: 5%;
 }
 
+/*FOOTER*/
 .pieDePagina {
-  background-color: #FFF89A;
+  background-color: #F6FFA4;
   font-family: "Text Me One", sans-serif;
   font-size: 17px;
   text-align: center;
   color: black;
+  height: 150px;
   border-top: solid #FFFDDE;
-  height: auto;
-  width: 100vw;
+  max-width: 100vw;
 }
-.pieDePagina .tituloDeContacto {
+.pieDePagina .tituloContacto {
   padding-top: 15px;
 }
-.pieDePagina .tituloDeContacto .textoDeContacto {
+.pieDePagina .tituloContacto .tituloDeContacto {
   padding-top: 15px;
 }
 

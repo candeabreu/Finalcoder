@@ -1,4 +1,5 @@
-header {
+header { 
+    
     .navNuevo {
         background-color: #FFF89A;
         font-family: 'Text Me One', sans-serif;
@@ -14,8 +15,7 @@ header {
 
                 .opcionesMenu {
                     display: flex;
-                    justify-items: end;
-
+                    justify-content: end;
 
                 }
 
