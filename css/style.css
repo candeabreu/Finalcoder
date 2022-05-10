@@ -43,6 +43,7 @@ header .navNuevo .container-fluid .logoNavbar .opcionesMenu {
   height: 150px;
   border-top: solid #FFFDDE;
   max-width: 100vw;
+  height: 15vw;
 }
 .pieDePagina .tituloContacto {
   padding-top: 15px;
