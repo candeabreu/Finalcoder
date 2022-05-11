@@ -12,3 +12,11 @@
     bottom: 5%;
     right: 5%;
 }
+
+@media screen and (max-width:450px) {
+    .logoWapp2 {
+       
+        display: none;
+    }
+
+}
