@@ -201,6 +201,7 @@ header .navNuevo .container-fluid .logoNavbar .opcionesMenu {
 
 /* RESPONSIVE MOBILE */
 @media screen and (max-width: 450px) {
+  /* HEADER */
   header .navNuevo .container-fluid .logoNavbar {
     width: 70px;
     height: 50px;
@@ -210,6 +211,7 @@ header .navNuevo .container-fluid .logoNavbar .opcionesMenu {
     justify-content: start;
   }
 
+  /* FOOTER */
   .pieDePagina {
     background-color: #FFF89A;
     font-family: "Text Me One", sans-serif;
@@ -298,6 +300,66 @@ header .navNuevo .container-fluid .logoNavbar .opcionesMenu {
     justify-items: center;
     position: relative;
     right: 12px;
+  }
+}
+/* RESPONSIVE TABLET */
+@media screen and (min-width: 451px) and (max-width: 960px) {
+  /* FOOTER */
+  .pieDePagina {
+    height: auto;
+  }
+
+  /* PRODUCTOS TABLET*/
+  .mainProductos .tituloProductos {
+    font-size: 20px;
+    padding-right: 10%;
+    padding-top: 5%;
+  }
+
+  /* GRID GALERIA PRODUCTOS */
+  .galeriaProductos {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 250px 250px;
+    width: 91vw;
+    padding: 2%;
+  }
+  .galeriaProductos .productosItem {
+    width: 250px;
+    height: 250px;
+    display: flex;
+  }
+
+  /* ALQUILER DE ESPACIOS MOBILE */
+  .mainAlquilerDeEspacios div .subtituloAlquiler {
+    font-size: 15px;
+    text-align: center;
+    width: 95vw;
+    position: relative;
+    left: 0px;
+  }
+
+  .galeria .titulosEspaciosDeAlquiler {
+    font-size: 10px;
+    width: 100vw;
+    position: relative;
+    right: 12px;
+    line-height: 2;
+  }
+
+  /*GALERIA ALQUILER DE ESPACIOS GRID*/
+  .galeriaAlquiler {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    grid-gap: 10px;
+    justify-items: center;
+    position: relative;
+    right: 12px;
+  }
+  .galeriaAlquiler .fotosAlquiler {
+    width: 180px;
+    height: 180px;
   }
 }
 
