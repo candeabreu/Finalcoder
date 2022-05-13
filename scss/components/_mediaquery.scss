@@ -191,14 +191,14 @@
     .galeriaProductos {
 
         display: grid;
-        grid-template-columns: 250px 250px;
-        grid-template-rows: 250px 250px;
+        grid-template-columns: 230px 230px 230px;
+        grid-template-rows: 230px 230px 230px;
         width: 91vw;
         padding: 2%;
 
         .productosItem {
-            width: 250px;
-            height: 250px;
+            width: 230px;
+            height: 230px;
             display: flex;
         }
 

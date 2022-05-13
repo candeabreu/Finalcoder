@@ -1,12 +1,13 @@
-header { 
-    
+header {
+
     .navNuevo {
         background-color: #FFF89A;
         font-family: 'Text Me One', sans-serif;
         font-size: 20px;
         border-bottom: solid #FFFDDE;
         display: flex;
-        
+        justify-content: flex-end;
+
 
         .container-fluid {
 
@@ -14,12 +15,15 @@ header {
                 width: 140px;
                 height: 100px;
 
-                .opcionesMenu {
-                    display: flex;
-                    justify-content: end;
-
+                .navbar-nav { 
+                    
+                    .opcionesMenu {
+                        display: flex;
+                        justify-content: end;
+                        
+                        
+                    }
                 }
-
             }
         }
     }
