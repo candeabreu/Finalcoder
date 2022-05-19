@@ -79,6 +79,7 @@ header .navNuevo .container-fluid .logoNavbar .navbar-nav .opcionesMenu {
 @font-face {
   font-family: "tipografianueva";
   src: url(tipografias/tipografianueva.woff);
+  font-display: swap;
 }
 /* Carrusel */
 .tituloCarousel {
