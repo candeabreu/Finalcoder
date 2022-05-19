@@ -1,16 +1,18 @@
+@import '../base/variables';
+@import '../base/mixin';
+
 /*MAIN ALQUILER DE ESPACIOS*/
 
 .mainAlquilerDeEspacios {
-    background-color: #FCF7BB;
-    display: flex;
-    justify-content: center;
+    background-color: $bg-color-fondo;
+    @include flex(flex, center);
     height: auto;
     display: grid;
 
     div {
         .subtituloAlquiler {
             font-size: 30px;
-            font-family: 'tipografianueva';
+            font-family: $fuente-titulo;
             text-align: center;
             display: flex;
             justify-content: center;

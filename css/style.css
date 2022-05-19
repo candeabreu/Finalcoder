@@ -1,8 +1,11 @@
 header .navNuevo {
   background-color: #FFF89A;
-  font-family: "Text Me One", sans-serif;
   font-size: 20px;
   border-bottom: solid #FFFDDE;
+}
+
+header .navNuevo {
+  font-family: "Text Me One", sans-serif;
   display: flex;
   justify-content: flex-end;
 }
@@ -39,23 +42,24 @@ header .navNuevo .container-fluid .logoNavbar .navbar-nav .opcionesMenu {
     display: none;
   }
 }
+/* Mapas */
 /*FOOTER*/
 .pieDePagina {
-  background-color: #FFF89A;
   font-family: "Text Me One", sans-serif;
   font-size: 17px;
+  background-color: #FFF89A;
   text-align: center;
   color: black;
-  height: 150px;
   border-top: solid #FFFDDE;
   max-width: 100vw;
   height: 15vw;
 }
 .pieDePagina .tituloContacto {
   padding-top: 15px;
+  font-family: "tipografianueva";
 }
-.pieDePagina .tituloContacto .tituloDeContacto {
-  padding-top: 15px;
+.pieDePagina .tituloContacto .textoDeContacto {
+  padding-top: 20px;
 }
 
 /* logos redes sociales */
@@ -117,9 +121,9 @@ header .navNuevo .container-fluid .logoNavbar .navbar-nav .opcionesMenu {
   font-size: 25px;
   font-family: "tipografianueva";
   position: relative;
-  top: 85px;
+  top: 147px;
   text-align: center;
-  width: 55vw;
+  width: 74vw;
   background-color: rgba(252, 251, 178, 0.6901960784);
 }
 
@@ -363,6 +367,26 @@ header .navNuevo .container-fluid .logoNavbar .navbar-nav .opcionesMenu {
     width: 180px;
     height: 180px;
   }
+}
+.mainContacto {
+  background-color: #FCF7BB;
+  width: auto;
+  height: auto;
+}
+.mainContacto .tituloContacto {
+  margin: 0;
+  font-family: "tipografiaNueva";
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+/* Mapas */
+header .navNuevo {
+  background-color: #FFF89A;
+  font-size: 20px;
+  border-bottom: solid #FFFDDE;
 }
 
 /*# sourceMappingURL=style.css.map */

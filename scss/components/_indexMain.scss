@@ -1,6 +1,8 @@
+@import '../base/variables';
+
 /* FUENTES */
 @font-face {
-    font-family: "tipografianueva";
+    font-family: $fuente-titulo;
     src: url(tipografias/tipografianueva.woff);
 }
 

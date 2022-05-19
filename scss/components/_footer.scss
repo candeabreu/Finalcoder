@@ -1,22 +1,26 @@
+@import '../base/variables';
+@import '../base/mapas';
+
 /*FOOTER*/
 
 .pieDePagina {
-
-    background-color: #FFF89A;
     font-family: 'Text Me One', sans-serif;
-    font-size: 17px;
+    font-size: map-get($footer, font-size);
+    background-color: $bg-color-hyf;
     text-align: center;
-    color: black;
-    height: 150px;
+    color: map-get($footer, color);
     border-top: solid #FFFDDE;
     max-width: 100vw;
-    height: 15vw;
+    height: map-get($footer, ancho); 
 
     .tituloContacto {
         padding-top: 15px;
+        font-family: $fuente-titulo;
 
-        .tituloDeContacto {
-            padding-top: 15px;
+        .textoDeContacto {
+            padding-top: 20px;
+         
+
         }
     }
 

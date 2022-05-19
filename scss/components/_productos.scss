@@ -1,6 +1,9 @@
+@import '../base/variables' ;
+
 /*MAIN PRODUCTOS*/
 .mainProductos {
-    background-color: #FCF7BB;
+
+    background-color: $bg-color-fondo;
     width: auto;
     height: auto;
     display: grid;
@@ -10,12 +13,9 @@
         display: flex;
         justify-content: center;
         font-size: 35px;
-        font-family: "tipografianueva";
+        font-family: $fuente-titulo;
         padding-top: 20px;
-
-       
     }
-
 
 }
 
@@ -40,6 +40,6 @@
         -moz-box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.49);
         box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.49);
 
-        }
-
     }
+
+}

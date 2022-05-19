@@ -1,3 +1,5 @@
+@import '../base/variables';
+
 .contenidoPrincipal {
     display: flex;
     justify-content: center;
@@ -12,14 +14,14 @@
             color: black;
             padding: 69px;
             font-size: 25px;
-            font-family: 'tipografianueva';
+            font-family: $fuente-titulo;
             position: relative;
-            top: 85px;
+            top: 147px;
             text-align: center;
-            width: 55vw;
+            width: 74vw;
             background-color: #fcfbb2b0;
 
-            
+
         }
     }
 }

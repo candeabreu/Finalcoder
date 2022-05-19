@@ -1,13 +1,14 @@
+@import '../base/variables';
+@import '../base/extends';
+
 header {
 
     .navNuevo {
-        background-color: #FFF89A;
+        
         font-family: 'Text Me One', sans-serif;
-        font-size: 20px;
-        border-bottom: solid #FFFDDE;
         display: flex;
         justify-content: flex-end;
-
+        @extend %header;
 
         .container-fluid {
 
