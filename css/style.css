@@ -13,10 +13,6 @@ header .navNuevo .container-fluid .logoNavbar {
   width: 140px;
   height: 100px;
 }
-header .navNuevo .container-fluid .logoNavbar .navbar-nav .opcionesMenu {
-  display: flex;
-  justify-content: end;
-}
 
 .navbar-nav .opcionesNav:hover {
   text-decoration: underline;
@@ -251,10 +247,12 @@ header .navNuevo .container-fluid .logoNavbar .navbar-nav .opcionesMenu {
     background-image: url(imagenes/fotomobilenosotros.png);
     padding: 0%;
   }
-  .contenidoPrincipal section .presentacionNosotros {
+  .contenidoPrincipal section .textoDePresentacion {
     font-size: 20px;
     background-color: rgba(252, 217, 178, 0.6705882353);
-    width: 66vw;
+    width: 90vw;
+    height: 115vw;
+    padding-top: 10%;
   }
 
   /* PRODUCTOS MOBILE */
