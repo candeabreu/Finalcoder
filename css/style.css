@@ -104,12 +104,41 @@ header .navNuevo .container-fluid .logoNavbar {
   transform: scale(2);
 }
 
+/* TITULOS MEDIA QUERY DISPLAY NONE */
 main .tituloMediaQuery {
   display: none;
 }
 
 main .subtituloIndex {
   display: none;
+}
+
+/* CARRUSEL EDIT */
+main {
+  background-color: rgba(255, 248, 154, 0.5803921569);
+  height: auto;
+}
+main section .carrusel {
+  padding: 1%;
+}
+
+main .tituloDos .subtituloDos {
+  color: black;
+  font-size: 30px;
+  font-family: "tipografianueva";
+  letter-spacing: 5px;
+  line-height: 50px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/* IMAGEN CARRITO */
+main .imagenCarrito .carritoCompras {
+  width: 80px;
+  position: relative;
+  left: 48%;
+  padding-bottom: 2%;
 }
 
 .contenidoPrincipal {
@@ -254,7 +283,7 @@ main .subtituloIndex {
 
   /* INDEX CARRUSEL MOBILE */
   main {
-    height: 100vw;
+    height: auto;
     background-color: rgba(255, 248, 154, 0.5803921569);
   }
   main section .carrusel {
@@ -268,17 +297,25 @@ main .subtituloIndex {
     justify-content: center;
     font-family: "tipografianueva";
     font-size: 25px;
-    padding-top: 5%;
+    padding-top: 7%;
   }
 
   /* SUBTITULO MEDIAQUERY */
-  main .subtituloIndex {
+  main .tituloDos .subtituloDos {
     display: flex;
     justify-content: center;
     font-family: "tipografianueva";
-    font-size: 22px;
-    padding-top: 4%;
-    padding-bottom: 5%;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 30px;
+  }
+
+  /* IMAGEN CARRITO MEDIA QUERY*/
+  main .imagenCarrito .carritoCompras {
+    width: 50px;
+    position: relative;
+    left: 45%;
+    padding-bottom: 8%;
   }
 
   /* NOSOTROS MOBILE */

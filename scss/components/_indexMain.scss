@@ -38,6 +38,7 @@
     }
 }
 
+/* TITULOS MEDIA QUERY DISPLAY NONE */
 main {
     .tituloMediaQuery {
         display: none;
@@ -46,9 +47,53 @@ main {
 
 main {
 
-
-    .subtituloIndex { 
+    .subtituloIndex {
         display: none;
 
+    }
+}
+
+/* CARRUSEL EDIT */
+main {
+    background-color: #fff89a94;
+    height: auto;
+
+    section {
+
+        .carrusel {
+            padding: 1%
+        }
+    }
+
+}
+
+main {
+    .tituloDos {
+        .subtituloDos {
+            color: black;
+            font-size: 30px;
+            font-family: "tipografianueva";
+            letter-spacing: 5px;
+            line-height: 50px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+
+
+        }
+    }
+}
+
+/* IMAGEN CARRITO */
+main {
+    .imagenCarrito {
+
+        .carritoCompras {
+            width: 80px;
+            position: relative;
+            left: 48%;
+            padding-bottom: 2%;
+
+        }
     }
 }
