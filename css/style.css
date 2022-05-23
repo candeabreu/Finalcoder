@@ -10,8 +10,7 @@ header .navNuevo {
   justify-content: flex-end;
 }
 header .navNuevo .container-fluid .logoNavbar {
-  width: 140px;
-  height: 100px;
+  height: 90px;
 }
 
 .navbar-nav .opcionesNav:hover {
@@ -48,7 +47,7 @@ header .navNuevo .container-fluid .logoNavbar {
   color: black;
   border-top: solid #FFFDDE;
   max-width: 100vw;
-  height: 15vw;
+  height: auto;
 }
 .pieDePagina .tituloContacto {
   padding-top: 15px;
@@ -64,11 +63,12 @@ header .navNuevo .container-fluid .logoNavbar {
   justify-content: center;
   align-content: center;
   overflow: hidden;
-  padding-top: 20px;
+  padding: 10px;
 }
 .logosDeContacto .logosIndividuales {
-  width: 35px;
-  height: 35px;
+  width: 45px;
+  height: 45px;
+  padding: 4px;
 }
 
 /* FUENTES */
@@ -102,6 +102,14 @@ header .navNuevo .container-fluid .logoNavbar {
   font-size: 35px;
   transition: all 2s;
   transform: scale(2);
+}
+
+main .tituloMediaQuery {
+  display: none;
+}
+
+main .subtituloIndex {
+  display: none;
 }
 
 .contenidoPrincipal {
@@ -206,12 +214,11 @@ header .navNuevo .container-fluid .logoNavbar {
 @media screen and (max-width: 450px) {
   /* HEADER */
   header .navNuevo .container-fluid .logoNavbar {
-    width: 70px;
-    height: 50px;
+    height: 40px;
   }
   header .navNuevo .container-fluid .logoNavbar .opcionesMenu {
     display: flex;
-    justify-content: start;
+    justify-items: start;
   }
 
   /* FOOTER */
@@ -221,8 +228,8 @@ header .navNuevo .container-fluid .logoNavbar {
     font-size: 15px;
     text-align: center;
     color: black;
-    width: 100vw;
-    height: auto;
+    width: 100%;
+    height: 43vw;
   }
   .pieDePagina .tituloContacto {
     position: relative;
@@ -236,9 +243,42 @@ header .navNuevo .container-fluid .logoNavbar {
   }
 
   /* logos redes sociales */
+  .logosDeContacto {
+    padding: 10px;
+  }
   .logosDeContacto .logosIndividuales {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+  }
+
+  /* INDEX CARRUSEL MOBILE */
+  main {
+    height: 100vw;
+    background-color: rgba(255, 248, 154, 0.5803921569);
+  }
+  main section .carrusel {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  /* TITULO MEDIA QUERY */
+  main .tituloMediaQuery {
+    display: flex;
+    justify-content: center;
+    font-family: "tipografianueva";
+    font-size: 25px;
+    padding-top: 5%;
+  }
+
+  /* SUBTITULO MEDIAQUERY */
+  main .subtituloIndex {
+    display: flex;
+    justify-content: center;
+    font-family: "tipografianueva";
+    font-size: 22px;
+    padding-top: 4%;
+    padding-bottom: 5%;
   }
 
   /* NOSOTROS MOBILE */
@@ -246,13 +286,15 @@ header .navNuevo .container-fluid .logoNavbar {
     width: 100vw;
     background-image: url(imagenes/fotomobilenosotros.png);
     padding: 0%;
+    height: auto;
   }
   .contenidoPrincipal section .textoDePresentacion {
     font-size: 20px;
-    background-color: rgba(252, 217, 178, 0.6705882353);
-    width: 90vw;
-    height: 115vw;
-    padding-top: 10%;
+    top: 20px;
+    padding: 0%;
+    height: 150vw;
+    padding-top: 30%;
+    background-color: transparent;
   }
 
   /* PRODUCTOS MOBILE */
@@ -260,7 +302,7 @@ header .navNuevo .container-fluid .logoNavbar {
     padding-top: 5%;
     display: flex;
     text-align: center;
-    font-size: 15px;
+    font-size: 25px;
     line-height: 2;
   }
 
@@ -270,7 +312,8 @@ header .navNuevo .container-fluid .logoNavbar {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
     width: 100vw;
-    padding: 10%;
+    padding: 3%;
+    justify-items: center;
   }
   .galeriaProductos .productosItem {
     width: 350px;
