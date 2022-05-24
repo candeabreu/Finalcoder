@@ -3,15 +3,37 @@
     background-color: #FCF7BB;
     width: auto;
     height: auto;
-    
-    .tituloContacto {
+
+    .tituloSeccionContacto {
         margin: 0;
         font-family: "tipografiaNueva";
         font-size: 40px;
         display: flex;
         justify-content: center;
         padding-top: 10px;
-        
-       
+
+
     }
+}
+
+
+/* FORMULARIO */
+
+form {
+
+
+    .formularioContacto {
+        text-align: center;
+        padding: 3%;
+
+        .opcionFormulario {
+
+            font-family: "Text Me One", sans-serif;
+            font-size: 20px;
+            height: 35px;
+
+
+        }
+    }
+
 }

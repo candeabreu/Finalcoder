@@ -68,7 +68,7 @@
     main {
         height: auto;
         background-color: #fff89a94;
-        
+
 
         section {
 
@@ -109,18 +109,19 @@
             }
         }
     }
-/* IMAGEN CARRITO MEDIA QUERY*/
-main {
-    .imagenCarrito {
-        
-        .carritoCompras {
-            width: 50px;
-            position: relative;
-            left: 45%;
-            padding-bottom: 8%;
+
+    /* IMAGEN CARRITO MEDIA QUERY*/
+    main {
+        .imagenCarrito {
+
+            .carritoCompras {
+                width: 50px;
+                position: relative;
+                left: 45%;
+                padding-bottom: 8%;
+            }
         }
     }
-}
 
 
     /* NOSOTROS MOBILE */
@@ -198,6 +199,7 @@ main {
 
             }
         }
+        
     }
 
     .galeria {
@@ -223,7 +225,18 @@ main {
 
     }
 
+    /* CONTACTO MOBILE */
+    .mainContacto {
+
+        .tituloSeccionContacto{
+            text-size-adjust: 25px
+            ;
+     
+        }
+    }
+    
 }
+
 
 /* RESPONSIVE TABLET */
 
