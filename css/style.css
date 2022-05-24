@@ -363,7 +363,7 @@ main .imagenCarrito .carritoCompras {
 
   /* ALQUILER DE ESPACIOS MOBILE */
   .mainAlquilerDeEspacios div .subtituloAlquiler {
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     width: 100vw;
     position: relative;
@@ -374,7 +374,6 @@ main .imagenCarrito .carritoCompras {
     font-size: 18px;
     position: relative;
     right: 0px;
-    line-height: 2;
   }
 
   /*GALERIA ALQUILER DE ESPACIOS GRID*/
@@ -385,7 +384,7 @@ main .imagenCarrito .carritoCompras {
     grid-gap: 10px;
     justify-items: center;
     position: relative;
-    right: 12px;
+    right: 0;
   }
 
   /* CONTACTO MOBILE */
