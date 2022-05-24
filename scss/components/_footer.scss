@@ -11,7 +11,7 @@
     color: map-get($footer, color);
     border-top: solid #FFFDDE;
     max-width: 100vw;
-    height: map-get($footer, ancho); 
+    height: auto; 
 
     .tituloContacto {
         padding-top: 15px;
