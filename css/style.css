@@ -263,7 +263,6 @@ main .imagenCarrito .carritoCompras {
   }
   .pieDePagina .tituloContacto {
     position: relative;
-    left: 1%;
   }
   .pieDePagina .tituloContacto .tituloDeContacto {
     display: flex;
@@ -460,7 +459,7 @@ header .navNuevo {
 }
 
 .mainContacto {
-  background-color: #FCF7BB;
+  background-image: url(../components/fondocontacto.png);
   width: auto;
   height: auto;
 }
