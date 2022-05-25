@@ -116,7 +116,7 @@ main .subtituloIndex {
 
 /* CARRUSEL EDIT */
 main {
-  background-color: rgba(255, 248, 154, 0.5803921569);
+  background-color: #FCF7BB;
   height: auto;
 }
 main section .carrusel {
@@ -140,6 +140,10 @@ main .imagenCarrito .carritoCompras {
   position: relative;
   left: 48%;
   padding-bottom: 2%;
+}
+main .imagenCarrito .carritoCompras:hover {
+  transform: scale(1.3);
+  transition: all 2s;
 }
 
 .contenidoPrincipal {
@@ -459,7 +463,7 @@ header .navNuevo {
 }
 
 .mainContacto {
-  background-image: url(../components/fondocontacto.png);
+  background-color: #FCF7BB;
   width: auto;
   height: auto;
 }
@@ -481,6 +485,23 @@ form .formularioContacto .opcionFormulario {
   font-family: "Text Me One", sans-serif;
   font-size: 20px;
   height: 35px;
+}
+
+form .boton {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2%;
+}
+form .boton .botonEnviar {
+  position: relative;
+  top: 1%;
+  font-family: "Text Me One", sans-serif;
+  font-size: 20px;
+  color: black;
+  border: solid 2px #ffffff;
+}
+form .boton .botonEnviar:hover {
+  background-color: rgba(255, 255, 0, 0.548);
 }
 
 /*# sourceMappingURL=style.css.map */
