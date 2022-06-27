@@ -1,0 +1,127 @@
+//CICLOS E INTERACIONES
+// FOR (DESDE; HASTA; ACTUALIZACION) {}
+/*
+for (let index = 0; index <= 10; index= index + 1){
+  console.log (index)
+} */
+
+//MENSAJE BIENVENIDA
+
+let nombreIngresado= prompt ("Ingresar nombre")
+let apellidoIngresado = prompt ("Ingresar apellido")
+
+
+if ((nombreIngresado != "") && (apellidoIngresado != "")) {
+
+    console.log ("El nombre del usuario es:" + "" + nombreIngresado + "" + apellidoIngresado);
+} else {
+    console.log("Error: Ingresar nombre y apellido")
+}
+
+
+function bienvenida () {
+    alert ( nombreIngresado + "" + " te damos la bienvenida a Mire Tienda de niños!")
+}
+
+bienvenida ()
+
+//SWITCH 
+//SELECCION DE PRODUCTO
+
+let seleccionCategorias = prompt("Seleccione una categoria para iniciar su compra: \n 1-Juguetes de madera \n 2-Juego de roles \n 3-Rompecabezas \n 4-Libros infantiles");
+
+switch (seleccionCategorias) {
+    case "1":
+        console.log("Ingreso a la categoria: Juguetes de madera");
+        break;
+
+    case "2":
+        console.log("Ingreso a la categoria: Juego de roles");
+        break;
+
+    case "3":
+        console.log("Ingreso a la categoria: Rompecabezas");
+        break;
+
+    case "4":
+        console.log("Ingreso a la categoria: Libros infantiles");
+        break;
+
+    default:
+        console.log("Dato Invalido")
+        break;
+        
+}
+
+//BUCLES POR CONDICION WHILE 
+//ESPECIFICAR QUE QUIERO COMPRAR
+
+
+let ingresoDeProducto = prompt("Ingrese el/los productos que desea comprar \n Para finalizar la compra ingrese: pagar")
+
+while (ingresoDeProducto != "pagar") {
+    console.log("Ingresaste el producto " + ingresoDeProducto)
+    //ACTUALIZAR PARA QUE EN ALGUN MOMENTO SEA FALSO
+    ingresoDeProducto = prompt("Ingrese el/los productos que desea comprar \n Para finalizar la compra ingrese: pagar")
+}
+
+function gracias () {
+    alert ("Gracias " + "" + nombreIngresado + "" + " por tu compra! \n A continuacion completa los datos y elije los medios de pago")
+}
+
+gracias ();
+
+//DATOS DEL COMPRADOR
+function crearPersona (mensaje) {
+
+    let dato = prompt (mensaje);
+    return dato;
+
+}
+
+let nombreCompleto = crearPersona ("Ingresar tu nombre completo");
+let edad = crearPersona ("Ingresar tu edad");
+let localidad = crearPersona ("Ingresar tu localidad");
+let email = crearPersona ("Ingresar tu email");
+
+console.log ("Datos del usuario:")
+console.log (nombreCompleto);
+console.log (edad);
+console.log (localidad);
+console.log (email);
+
+//SELCCION DE MEDIO DE PAGO
+
+let ingresoPagos = prompt( nombreIngresado + " ingresa una opcion \n 1-Pago en efectivo \n 2-Pago con debito \n 3-Pago con tarjeta \n 4-Pago por transferencia");
+
+switch (ingresoPagos) {
+    case "1":
+        console.log("Seleccionaste pago en efectivo");
+        break;
+
+    case "2":
+        console.log("Seleccionaste pago con debito");
+        break;
+
+    case "3":
+        console.log("Seleccionaste pago con tarjeta");
+        break;
+
+    case "4":
+        console.log("Seleccionaste pago por transferencia");
+        break;
+
+    default:
+        console.log("Dato Invalido")
+        break;
+        
+}if (ingresoPagos == "0") {
+    alert("¡Gracias, que tengas un buen dia!");
+}
+
+
+function gracias2 () {
+    alert ("Gracias " + "" + nombreIngresado + "" + " por tu compra! \n Te enviaremos un mail para que realices el seguimiento")
+}
+
+gracias2 ();
