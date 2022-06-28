@@ -1,10 +1,3 @@
-//CICLOS E INTERACIONES
-// FOR (DESDE; HASTA; ACTUALIZACION) {}
-/*
-for (let index = 0; index <= 10; index= index + 1){
-  console.log (index)
-} */
-
 //MENSAJE BIENVENIDA
 
 let nombreIngresado = prompt("Ingresar nombre")
@@ -32,15 +25,15 @@ let seleccionCategorias = prompt("Seleccione un producto: \n 1-Tren de madera  \
 
 switch (seleccionCategorias) {
     case "1":
-        alert ("Seleccionaste tren de madera Valor $300");
+        alert("Seleccionaste tren de madera Valor $300");
         break;
 
     case "2":
-        alert ("Seleccionaste disfraz de superheroe Valor $300");
+        alert("Seleccionaste disfraz de superheroe Valor $300");
         break;
 
     case "3":
-       alert ("Seleccionaste rompecabezas Valor $300");
+        alert("Seleccionaste rompecabezas Valor $300");
         break;
 
     case "4":
@@ -48,7 +41,7 @@ switch (seleccionCategorias) {
         break;
 
     default:
-       alert ("Dato Invalido")
+        alert("Dato Invalido")
         break;
 
 }
@@ -64,10 +57,8 @@ if (isNaN(ingreso)) {
 } else {
     let result = ingreso * valor;
     console.log(ingreso + "x" + valor + "=" + result);
-    alert ("El total a pagar es: $" + result);
-} 
-
-
+    alert("El total a pagar es: $" + result);
+}
 
 function gracias() {
     alert("Gracias " + "" + nombreIngresado + "" + " por tu compra! \n A continuacion completa los datos y elije los medios de pago")
@@ -86,15 +77,28 @@ function crearPersona(mensaje) {
 let nombreCompleto = crearPersona("Ingresar tu nombre completo");
 let edad = crearPersona("Ingresar tu edad");
 let localidad = crearPersona("Ingresar tu localidad");
+let direccion = crearPersona("Ingresar tu direccion");
 let email = crearPersona("Ingresar tu email");
 
 console.log("Datos del usuario:")
 console.log(nombreCompleto);
 console.log(edad);
 console.log(localidad);
+console.log (direccion);
 console.log(email);
 
-//SELCCION DE MEDIO DE PAGO
+//BUCLES POR CONDICION WHILE
+
+let ingresoDeComentario = prompt("De ser necesario, ingrese un comentario sobre su compra \n De lo contrario, para finalizar ingresa la palabra: pagar")
+
+while (ingresoDeComentario != "pagar") {
+    console.log("Informacion adicional sobre la compra:" + ingresoDeComentario)
+    //ACTUALIZAR PARA QUE EN ALGUN MOMENTO SEA FALSO
+    ingresoDeComentario = prompt("De ser necesario, ingrese un comentario sobre su compra \n De lo contrario, para finalizar ingresa la palabra: pagar")
+}
+
+
+//SELECCION DE MEDIO DE PAGO
 
 let ingresoPagos = prompt(nombreIngresado + " ingresa una opcion \n 1-Pago en efectivo \n 2-Pago con debito \n 3-Pago con tarjeta \n 4-Pago por transferencia");
 
