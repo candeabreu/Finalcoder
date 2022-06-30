@@ -21,29 +21,38 @@ bienvenida()
 //SWITCH 
 //SELECCION DE PRODUCTO
 
-let seleccionCategorias = prompt("Seleccione un producto: \n 1-Tren de madera  \n 2-Disfraz de superheroe  \n 3-Rompecabezas grande \n 4-Cuento de mosntruos");
+let categoriaSeleccion = false
+
+while (categoriaSeleccion == false) {
+
+    let seleccionCategorias = prompt("Seleccione un producto: \n 1-Tren de madera  \n 2-Disfraz de superheroe  \n 3-Rompecabezas grande \n 4-Cuento de mosntruos");
 
 switch (seleccionCategorias) {
     case "1":
         alert("Seleccionaste tren de madera Valor $300");
+        categoriaSeleccion = true
         break;
 
     case "2":
         alert("Seleccionaste disfraz de superheroe Valor $300");
+        categoriaSeleccion = true
         break;
 
     case "3":
         alert("Seleccionaste rompecabezas Valor $300");
+        categoriaSeleccion = true
         break;
 
     case "4":
         alert("Seleccionaste cuento de mosntruos Valor $300 ");
+        categoriaSeleccion = true
         break;
 
     default:
         alert("Dato Invalido")
         break;
 
+}
 }
 
 //Calcular precio por cantidad
@@ -99,24 +108,30 @@ while (ingresoDeComentario != "pagar") {
 
 
 //SELECCION DE MEDIO DE PAGO
-
+//WHILE PARA VALIDAR QUE LA INFORMACION ES VERDADERA
+let pagos = false
+while (pagos == false) {
 let ingresoPagos = prompt(nombreIngresado + " ingresa una opcion \n 1-Pago en efectivo \n 2-Pago con debito \n 3-Pago con tarjeta \n 4-Pago por transferencia");
 
 switch (ingresoPagos) {
     case "1":
         console.log("Seleccionaste pago en efectivo");
+        pagos = true
         break;
 
     case "2":
         console.log("Seleccionaste pago con debito");
+        pagos = true
         break;
 
     case "3":
         console.log("Seleccionaste pago con tarjeta");
+        pagos = true
         break;
 
     case "4":
         console.log("Seleccionaste pago por transferencia");
+        pagos = true
         break;
 
     default:
@@ -126,6 +141,8 @@ switch (ingresoPagos) {
 }
 if (ingresoPagos == "0") {
     alert("¡Gracias, que tengas un buen dia!");
+}
+
 }
 
 
