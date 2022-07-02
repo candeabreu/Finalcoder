@@ -18,41 +18,136 @@ function bienvenida() {
 
 bienvenida()
 
+function catalogo() {
+    alert("Te mostramos nuestro catalogo de productos")
+}
+catalogo()
+
+//ARRAY
+const catalogoDeProductos = [ "Juguetes disponibles:", "\nTrenes de mandera - colores disponibles: rojo, verde y azul -", "\nRompecabezas - 5, 10 y 25 piezas -", "\nDisfraces", "\nLibros infantiles" ]
+alert (catalogoDeProductos)
+catalogoDeProductos.indexOf ("Juguetes disponibles:")
+console.log (catalogoDeProductos)
+
 //SWITCH 
 //SELECCION DE PRODUCTO
 
 let categoriaSeleccion = false
+let trenColores = false
+let disfraces = false
+let rompecabezasSeleccion = false
+let cuentosSeleccion = false
 
 while (categoriaSeleccion == false) {
 
-    let seleccionCategorias = prompt("Seleccione un producto: \n 1-Tren de madera  \n 2-Disfraz de superheroe  \n 3-Rompecabezas grande \n 4-Cuento de mosntruos");
+    let seleccionCategorias = prompt("Seleccione un producto: \n 1-Tren de madera  \n 2-Disfraces  \n 3-Rompecabezas grande \n 4-Cuento infantiles");
 
-switch (seleccionCategorias) {
-    case "1":
-        alert("Seleccionaste tren de madera Valor $300");
-        categoriaSeleccion = true
-        break;
+    switch (seleccionCategorias) {
+        case "1":
+            alert("Seleccionaste tren de madera Valor $300");
+            categoriaSeleccion = true
+            let coloresTren = prompt("Seleccione un color: \n 1- Verde \n 2-Rojo \n 3-Azul")
+            while (trenColores == false) {
+                switch (coloresTren) {
+                    case "1":
+                        alert("Seleccionaste color verde")
+                        trenColores = true
+                        break;
+                    case "2":
+                        alert("Seleccionaste color rojo")
+                        trenColores = true
+                        break;
+                    case "3":
+                        alert("Seleccionaste color azul")
+                        trenColores = true
+                        break;
+                    default:
+                        alert("Dato Invalido")
+                        break;
+                }
+            }
+            break;
 
-    case "2":
-        alert("Seleccionaste disfraz de superheroe Valor $300");
-        categoriaSeleccion = true
-        break;
+        case "2":
+            alert("Seleccionaste disfraces Valor $300");
+            categoriaSeleccion = true
+            let disfracesSeleccion = prompt("Seleccione tipo de disfraz: \n 1- Hombre Araña \n 2- Princesa  \n 3- Hulk");
+            while (disfraces == false) {
+                switch (disfracesSeleccion) {
+                    case "1":
+                        alert("Seleccionaste disfraz de hombre araña")
+                        disfraces = true
+                        break;
+                    case "2":
+                        alert("Seleccionaste disfraz de princesa")
+                        disfraces = true
+                        break;
+                    case "3":
+                        alert("Seleccionaste disfraz de hulk")
+                        disfraces = true
+                        break;
+                    default:
+                        alert("Dato Invalido")
+                        break;
+                }
+            }
+            break;
 
-    case "3":
-        alert("Seleccionaste rompecabezas Valor $300");
-        categoriaSeleccion = true
-        break;
+        case "3":
+            alert("Seleccionaste rompecabezas Valor $300");
+            categoriaSeleccion = true
+            let rompecabezas = prompt("Seleccione cantidad de piezas: \n 1- 5 Piezas \n 2- 10 piezas  \n 3- 25 piezas")
+            while (rompecabezasSeleccion == false) {
+                switch (rompecabezas) {
+                    case "1":
+                        alert("Seleccionaste rompecabezas de 5 piezas")
+                        rompecabezasSeleccion = true
+                        break;
+                    case "2":
+                        alert("Seleccionaste rompecabezas de 10 piezas")
+                        rompecabezasSeleccion = true
+                        break;
+                    case "3":
+                        alert("Seleccionaste rompecabezas de 25 piezas")
+                        rompecabezasSeleccion = true
+                        break;
+                    default:
+                        alert("Dato Invalido")
+                        break;
+                }
+            }
+            break;
 
-    case "4":
-        alert("Seleccionaste cuento de mosntruos Valor $300 ");
-        categoriaSeleccion = true
-        break;
+        case "4":
+            alert("Seleccionaste cuentos infantiles $300 ");
+            categoriaSeleccion = true
+            let cuentos = prompt("Seleccione titulo de cuento \n 1- Perdido y encontrado de Oliver Jeffers \n 2- Atrapado de Oliver Jeffers  \n 3- El zoo de Joaquin de Pablo Bernasconi")
+            while (cuentosSeleccion == false) {
+                switch (cuentos) {
+                    case "1":
+                        alert("Seleccionaste el titulo Perdido y encontrado de Oliver Jeffers")
+                        cuentosSeleccion = true
+                        break;
+                    case "2":
+                        alert("Seleccionaste el titulo Atrapado de Oliver Jeffers")
+                        cuentosSeleccion = true
+                        break;
+                    case "3":
+                        alert("Seleccionaste el titulo El zoo de Joaquin de Pablo Bernasconi ")
+                        cuentosSeleccion = true
+                        break;
+                    default:
+                        alert("Dato Invalido")
+                        break;
+                }
+            }
+            break;
 
-    default:
-        alert("Dato Invalido")
-        break;
+        default:
+            alert("Dato Invalido")
+            break;
 
-}
+    }
 }
 
 //Calcular precio por cantidad
@@ -93,7 +188,7 @@ console.log("Datos del usuario:")
 console.log(nombreCompleto);
 console.log(edad);
 console.log(localidad);
-console.log (direccion);
+console.log(direccion);
 console.log(email);
 
 //BUCLES POR CONDICION WHILE
@@ -111,37 +206,37 @@ while (ingresoDeComentario != "pagar") {
 //WHILE PARA VALIDAR QUE LA INFORMACION ES VERDADERA
 let pagos = false
 while (pagos == false) {
-let ingresoPagos = prompt(nombreIngresado + " ingresa una opcion \n 1-Pago en efectivo \n 2-Pago con debito \n 3-Pago con tarjeta \n 4-Pago por transferencia");
+    let ingresoPagos = prompt(nombreIngresado + " ingresa una opcion \n 1-Pago en efectivo \n 2-Pago con debito \n 3-Pago con tarjeta \n 4-Pago por transferencia");
 
-switch (ingresoPagos) {
-    case "1":
-        console.log("Seleccionaste pago en efectivo");
-        pagos = true
-        break;
+    switch (ingresoPagos) {
+        case "1":
+            console.log("Seleccionaste pago en efectivo");
+            pagos = true
+            break;
 
-    case "2":
-        console.log("Seleccionaste pago con debito");
-        pagos = true
-        break;
+        case "2":
+            console.log("Seleccionaste pago con debito");
+            pagos = true
+            break;
 
-    case "3":
-        console.log("Seleccionaste pago con tarjeta");
-        pagos = true
-        break;
+        case "3":
+            console.log("Seleccionaste pago con tarjeta");
+            pagos = true
+            break;
 
-    case "4":
-        console.log("Seleccionaste pago por transferencia");
-        pagos = true
-        break;
+        case "4":
+            console.log("Seleccionaste pago por transferencia");
+            pagos = true
+            break;
 
-    default:
-        console.log("Dato Invalido")
-        break;
+        default:
+            console.log("Dato Invalido")
+            break;
 
-}
-if (ingresoPagos == "0") {
-    alert("¡Gracias, que tengas un buen dia!");
-}
+    }
+    if (ingresoPagos == "0") {
+        alert("¡Gracias, que tengas un buen dia!");
+    }
 
 }
 
