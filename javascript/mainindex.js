@@ -19,14 +19,13 @@ function bienvenida() {
 bienvenida()
 
 function catalogo() {
-    alert("Te mostramos nuestro catalogo de productos")
+    console.log("Te mostramos nuestro catalogo de productos")
 }
 catalogo()
 
-//ARRAY
-const catalogoDeProductos = [ "Juguetes disponibles:", "\nTrenes de mandera - colores disponibles: rojo, verde y azul -", "\nRompecabezas - 5, 10 y 25 piezas -", "\nDisfraces", "\nLibros infantiles" ]
-alert (catalogoDeProductos)
-catalogoDeProductos.indexOf ("Juguetes disponibles:")
+//ARRAY CON METODO PUSH PARA AGREGAR UN JUEGO EN EL CATALOGO
+const catalogoDeProductos = ["Trenes de mandera rojo", "Trenes de mandera verde", "Trenes de mandera azul", "Rompecabezas de 5 piezas", "Rompecabezas de 10 piezas", "Rompecabezas de 25 piezas", "Disfraces", "Libros infantiles"]
+catalogoDeProductos.push ("Juegos de encastre")
 console.log (catalogoDeProductos)
 
 //SWITCH 
@@ -40,7 +39,7 @@ let cuentosSeleccion = false
 
 while (categoriaSeleccion == false) {
 
-    let seleccionCategorias = prompt("Seleccione un producto: \n 1-Tren de madera  \n 2-Disfraces  \n 3-Rompecabezas grande \n 4-Cuento infantiles");
+    let seleccionCategorias = prompt("Seleccione un producto: \n 1-Tren de madera  \n 2-Disfraces  \n 3-Rompecabezas grande \n 4-Cuento infantiles \n 5- Juegos de encastre");
 
     switch (seleccionCategorias) {
         case "1":
@@ -142,7 +141,10 @@ while (categoriaSeleccion == false) {
                 }
             }
             break;
-
+        case "5":
+            alert("Seleccionaste juegos de encastre $300 ");
+            categoriaSeleccion = true;
+            break;
         default:
             alert("Dato Invalido")
             break;
