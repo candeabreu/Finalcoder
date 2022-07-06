@@ -1,4 +1,10 @@
-//MENSAJE BIENVENIDA
+//MENSAJE GENERAL DE BIENVENIDA
+
+saludar = () => {
+    alert("¡ Te damos la bienvenida a la Tienda On Line de Mire ! ");
+  };
+
+  saludar ()
 
 let nombreIngresado = prompt("Ingresar nombre")
 let apellidoIngresado = prompt("Ingresar apellido")
@@ -13,20 +19,20 @@ if ((nombreIngresado != "") && (apellidoIngresado != "")) {
 
 
 function bienvenida() {
-    alert(nombreIngresado + "" + " te damos la bienvenida a Mire Tienda de niños!")
+    alert(nombreIngresado + "" + " bienvenido/a!")
 }
 
 bienvenida()
 
 function catalogo() {
-    console.log("Te mostramos nuestro catalogo de productos")
+    console("Te mostramos nuestro catalogo de productos")
 }
 catalogo()
 
 //ARRAY CON METODO PUSH PARA AGREGAR UN JUEGO EN EL CATALOGO
-const catalogoDeProductos = ["Trenes de mandera rojo", "Trenes de mandera verde", "Trenes de mandera azul", "Rompecabezas de 5 piezas", "Rompecabezas de 10 piezas", "Rompecabezas de 25 piezas", "Disfraces", "Libros infantiles"]
-catalogoDeProductos.push ("Juegos de encastre")
-console.log (catalogoDeProductos)
+const catalogoDeProductos = ["Tren de mandera rojo", "Tren de mandera verde", "Tren de mandera azul", "Rompecabezas de 5 piezas", "Rompecabezas de 10 piezas", "Rompecabezas de 25 piezas", "Disfraces", "Libros infantiles"]
+catalogoDeProductos.push("Juegos de encastre")
+console.log(catalogoDeProductos)
 
 //SWITCH 
 //SELECCION DE PRODUCTO
@@ -70,8 +76,9 @@ while (categoriaSeleccion == false) {
         case "2":
             alert("Seleccionaste disfraces Valor $300");
             categoriaSeleccion = true
-            let disfracesSeleccion = prompt("Seleccione tipo de disfraz: \n 1- Hombre Araña \n 2- Princesa  \n 3- Hulk");
             while (disfraces == false) {
+                let disfracesSeleccion = prompt("Seleccione tipo de disfraz: \n 1- Hombre Araña \n 2- Princesa  \n 3- Hulk");
+
                 switch (disfracesSeleccion) {
                     case "1":
                         alert("Seleccionaste disfraz de hombre araña")
@@ -95,8 +102,9 @@ while (categoriaSeleccion == false) {
         case "3":
             alert("Seleccionaste rompecabezas Valor $300");
             categoriaSeleccion = true
-            let rompecabezas = prompt("Seleccione cantidad de piezas: \n 1- 5 Piezas \n 2- 10 piezas  \n 3- 25 piezas")
             while (rompecabezasSeleccion == false) {
+                let rompecabezas = prompt("Seleccione cantidad de piezas: \n 1- 5 Piezas \n 2- 10 piezas  \n 3- 25 piezas")
+
                 switch (rompecabezas) {
                     case "1":
                         alert("Seleccionaste rompecabezas de 5 piezas")
@@ -120,8 +128,9 @@ while (categoriaSeleccion == false) {
         case "4":
             alert("Seleccionaste cuentos infantiles $300 ");
             categoriaSeleccion = true
-            let cuentos = prompt("Seleccione titulo de cuento \n 1- Perdido y encontrado de Oliver Jeffers \n 2- Atrapado de Oliver Jeffers  \n 3- El zoo de Joaquin de Pablo Bernasconi")
             while (cuentosSeleccion == false) {
+                let cuentos = prompt("Seleccione titulo de cuento \n 1- Perdido y encontrado de Oliver Jeffers \n 2- Atrapado de Oliver Jeffers  \n 3- El zoo de Joaquin de Pablo Bernasconi")
+
                 switch (cuentos) {
                     case "1":
                         alert("Seleccionaste el titulo Perdido y encontrado de Oliver Jeffers")
