@@ -25,7 +25,7 @@ function bienvenida() {
 bienvenida()
 
 function catalogo() {
-    console("Te mostramos nuestro catalogo de productos")
+    console.log ("Te mostramos nuestro catalogo de productos")
 }
 catalogo()
 
