@@ -1,10 +1,11 @@
-//MENSAJE GENERAL DE BIENVENIDA
+/* //MENSAJE GENERAL DE BIENVENIDA
 
 saludar = () => {
     alert("¡ Te damos la bienvenida a la Tienda On Line de Mire ! ");
   };
 
-  saludar ()
+  saludar () */
+
 
 let nombreIngresado = prompt("Ingresar nombre")
 let apellidoIngresado = prompt("Ingresar apellido")
@@ -16,7 +17,7 @@ if ((nombreIngresado != "") && (apellidoIngresado != "")) {
 } else {
     console.log("Error: Ingresar nombre y apellido")
 }
-
+ /*
 
 function bienvenida() {
     alert(nombreIngresado + "" + " bienvenido/a!")
@@ -257,3 +258,11 @@ function gracias2() {
 }
 
 gracias2();
+console.dir (document) */
+
+//CREAR UN TITULO DESDE JS Y EDITADO EN CSS
+const h2= document.getElementById ("parrafoBienvenida")
+
+h2.innerHTML = "TE DAMOS LA BIENVENIDA " + nombreIngresado + " A MIRE TIENDA DE NIÑOS/AS - 3 Y 6 CUOTAS SIN INTERES "
+
+h2.className= "parrafoBienvenida2"
