@@ -131,11 +131,11 @@ if (seleccion == 1) {
     2. ${producto.opcion2} \n
     3. ${producto.opcion3} \n`))
     if (selectOption === 1) {
-        createProduct(producto.categoria, producto.opcion1)
+        createProduct(producto.id , producto.categoria, producto.opcion1)
     } else if (selectOption === 2) {
-        createProduct(producto.categoria, producto.opcion2)
+        createProduct(producto.id ,producto.categoria, producto.opcion2)
     } else if (selectOption === 3) {
-        createProduct(producto.categoria, producto.opcion3)
+        createProduct(producto.id ,producto.categoria, producto.opcion3)
     } else {
         alert("Opcion no valida, ha salido del proceso de compra")
     }
@@ -148,11 +148,11 @@ if (seleccion == 1) {
     2. ${producto.opcion2} \n
     3. ${producto.opcion3} \n`))
     if (selectOption === 1) {
-        createProduct(producto.categoria, producto.opcion1)
+        createProduct(producto.id ,producto.categoria, producto.opcion1)
     } else if (selectOption === 2) {
-        createProduct(producto.categoria, producto.opcion2)
+        createProduct(producto.id ,producto.categoria, producto.opcion2)
     } else if (selectOption === 3) {
-        createProduct(producto.categoria, producto.opcion3)
+        createProduct(producto.id ,producto.categoria, producto.opcion3)
     } else {
         alert("Opcion no valida, ha salido del proceso de compra")
     }
@@ -165,11 +165,11 @@ if (seleccion == 1) {
     2. ${producto.opcion2} \n
     3. ${producto.opcion3} \n`))
     if (selectOption === 1) {
-        createProduct(producto.categoria, producto.opcion1)
+        createProduct(producto.id ,producto.categoria, producto.opcion1)
     } else if (selectOption === 2) {
-        createProduct(producto.categoria, producto.opcion2)
+        createProduct(producto.id ,producto.categoria, producto.opcion2)
     } else if (selectOption === 3) {
-        createProduct(producto.categoria, producto.opcion3)
+        createProduct(producto.id ,producto.categoria, producto.opcion3)
     } else {
         alert("Opcion no valida, ha salido del proceso de compra")
     } 
@@ -182,11 +182,11 @@ if (seleccion == 1) {
     2. ${producto.opcion2} \n
     3. ${producto.opcion3} \n`))
     if (selectOption === 1) {
-        createProduct(producto.categoria, producto.opcion1)
+        createProduct(producto.id ,producto.categoria, producto.opcion1)
     } else if (selectOption === 2) {
-        createProduct(producto.categoria, producto.opcion2)
+        createProduct(producto.id ,producto.categoria, producto.opcion2)
     } else if (selectOption === 3) {
-        createProduct(producto.categoria, producto.opcion3)
+        createProduct(producto.id ,producto.categoria, producto.opcion3)
     } else {
         alert("Opcion no valida, ha salido del proceso de compra")
     } 

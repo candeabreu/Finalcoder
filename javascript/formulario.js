@@ -8,8 +8,9 @@ const inputEmail = document.getElementById("email")
 const inputNumero = document.getElementById("number")
 const inputMensaje = document.getElementById("massege")
 const respuestaMensaje = document.getElementById("areaDeMensaje")
+const formulario = document.getElementById ("formularioContacto")
 
-
+/*
 botonEnviar.addEventListener("click", () => {
 
     if (inputNombreCompleto.value == "" || inputEmail.value == "" || inputNumero.value == "") {
@@ -29,4 +30,27 @@ botonEnviar.addEventListener("click", () => {
     } else {
         areaDeMensaje.innerText = "Recibimos su mensaje, sera respondido a la brevedad a los datos anteriormente solicitados"
     }
+})*/
+
+formulario.addEventListener ("submit" , (e)=> {
+    e.preventDefault();
+    console.log (e.target)
+   
+    if (inputNombreCompleto.value == "" || inputEmail.value == "" || inputNumero.value == "") {
+        mensajeEnviar.innerText = "Complete todos los campos requeridos"
+    } else {
+        mensajeEnviar.innerText = "Mensaje enviado"}
+    
 })
+
+botonEnviar.addEventListener("click", () => {
+
+
+    if (inputMensaje.value == "") {
+        areaDeMensaje.innerText = "Escriba su consulta o comentario"
+    } else if (inputNombreCompleto.value == "" || inputEmail.value == "" || inputNumero.value == "") {
+        areaDeMensaje.innerText = ""
+
+    } else {
+        areaDeMensaje.innerText = "Recibimos su mensaje, sera respondido a la brevedad a los datos anteriormente solicitados"
+    }})
