@@ -2,9 +2,9 @@
 
 saludar = () => {
     alert("¡ Hola , estas en la Tienda On Line de Mire !  ");
-  };
+};
 
-  saludar () 
+saludar()
 
 
 let nombreIngresado = prompt("Ingresar nombre")
@@ -19,13 +19,12 @@ if ((nombreIngresado != "") && (apellidoIngresado != "")) {
 }
 
 //CREAR UN TITULO DESDE JS Y EDITADO EN CSS
-const h2= document.getElementById ("parrafoBienvenida")
+const h2 = document.getElementById("parrafoBienvenida")
 
 h2.innerHTML = "TE DAMOS LA BIENVENIDA " + nombreIngresado + " A MIRE TIENDA DE NIÑOS/AS - 3 Y 6 CUOTAS SIN INTERES "
 
-h2.className= "parrafoBienvenida2"
+h2.className = "parrafoBienvenida2"
 
- 
 
 function bienvenida() {
     alert(nombreIngresado + "" + " bienvenido/a!")
@@ -34,142 +33,167 @@ function bienvenida() {
 bienvenida()
 
 function catalogo() {
-    console.log ("Te mostramos nuestro catalogo de productos")
+    console.log("Te mostramos nuestro catalogo de productos")
 }
 catalogo()
 
 //ARRAY CON METODO PUSH PARA AGREGAR UN JUEGO EN EL CATALOGO
-const catalogoDeProductos = ["Tren de mandera rojo", "Tren de mandera verde", "Tren de mandera azul", "Rompecabezas de 5 piezas", "Rompecabezas de 10 piezas", "Rompecabezas de 25 piezas", "Disfraces", "Libros infantiles"]
-catalogoDeProductos.push("Juegos de encastre")
-console.log(catalogoDeProductos)
+//const catalogoDeProductos = ["Tren de mandera rojo", "Tren de mandera verde", "Tren de mandera azul", "Rompecabezas de 5 piezas", "Rompecabezas de 10 piezas", "Rompecabezas de 25 piezas", "Disfraces", "Libros infantiles"]
+//catalogoDeProductos.push("Juegos de encastre")
+//console.log(catalogoDeProductos)
 
-//SWITCH 
-//SELECCION DE PRODUCTO
-
-let categoriaSeleccion = false
-let trenColores = false
-let disfraces = false
-let rompecabezasSeleccion = false
-let cuentosSeleccion = false
-
-while (categoriaSeleccion == false) {
-
-    let seleccionCategorias = prompt("Seleccione un producto: \n 1-Tren de madera  \n 2-Disfraces  \n 3-Rompecabezas grande \n 4-Cuento infantiles \n 5- Juegos de encastre");
-
-    switch (seleccionCategorias) {
-        case "1":
-            alert("Seleccionaste tren de madera Valor $300");
-            categoriaSeleccion = true
-            let coloresTren = prompt("Seleccione un color: \n 1- Verde \n 2-Rojo \n 3-Azul")
-            while (trenColores == false) {
-                switch (coloresTren) {
-                    case "1":
-                        alert("Seleccionaste color verde")
-                        trenColores = true
-                        break;
-                    case "2":
-                        alert("Seleccionaste color rojo")
-                        trenColores = true
-                        break;
-                    case "3":
-                        alert("Seleccionaste color azul")
-                        trenColores = true
-                        break;
-                    default:
-                        alert("Dato Invalido")
-                        break;
-                }
-            }
-            break;
-
-        case "2":
-            alert("Seleccionaste disfraces Valor $300");
-            categoriaSeleccion = true
-            while (disfraces == false) {
-                let disfracesSeleccion = prompt("Seleccione tipo de disfraz: \n 1- Hombre Araña \n 2- Princesa  \n 3- Hulk");
-
-                switch (disfracesSeleccion) {
-                    case "1":
-                        alert("Seleccionaste disfraz de hombre araña")
-                        disfraces = true
-                        break;
-                    case "2":
-                        alert("Seleccionaste disfraz de princesa")
-                        disfraces = true
-                        break;
-                    case "3":
-                        alert("Seleccionaste disfraz de hulk")
-                        disfraces = true
-                        break;
-                    default:
-                        alert("Dato Invalido")
-                        break;
-                }
-            }
-            break;
-
-        case "3":
-            alert("Seleccionaste rompecabezas Valor $300");
-            categoriaSeleccion = true
-            while (rompecabezasSeleccion == false) {
-                let rompecabezas = prompt("Seleccione cantidad de piezas: \n 1- 5 Piezas \n 2- 10 piezas  \n 3- 25 piezas")
-
-                switch (rompecabezas) {
-                    case "1":
-                        alert("Seleccionaste rompecabezas de 5 piezas")
-                        rompecabezasSeleccion = true
-                        break;
-                    case "2":
-                        alert("Seleccionaste rompecabezas de 10 piezas")
-                        rompecabezasSeleccion = true
-                        break;
-                    case "3":
-                        alert("Seleccionaste rompecabezas de 25 piezas")
-                        rompecabezasSeleccion = true
-                        break;
-                    default:
-                        alert("Dato Invalido")
-                        break;
-                }
-            }
-            break;
-
-        case "4":
-            alert("Seleccionaste cuentos infantiles $300 ");
-            categoriaSeleccion = true
-            while (cuentosSeleccion == false) {
-                let cuentos = prompt("Seleccione titulo de cuento \n 1- Perdido y encontrado de Oliver Jeffers \n 2- Atrapado de Oliver Jeffers  \n 3- El zoo de Joaquin de Pablo Bernasconi")
-
-                switch (cuentos) {
-                    case "1":
-                        alert("Seleccionaste el titulo Perdido y encontrado de Oliver Jeffers")
-                        cuentosSeleccion = true
-                        break;
-                    case "2":
-                        alert("Seleccionaste el titulo Atrapado de Oliver Jeffers")
-                        cuentosSeleccion = true
-                        break;
-                    case "3":
-                        alert("Seleccionaste el titulo El zoo de Joaquin de Pablo Bernasconi ")
-                        cuentosSeleccion = true
-                        break;
-                    default:
-                        alert("Dato Invalido")
-                        break;
-                }
-            }
-            break;
-        case "5":
-            alert("Seleccionaste juegos de encastre $300 ");
-            categoriaSeleccion = true;
-            break;
-        default:
-            alert("Dato Invalido")
-            break;
+//ARRAY PARA CARRITO
+const catalogoDeProductos = [{
+        id: 1,
+        categoria: 'Tren de madera',
+        opcion1: 'verde',
+        opcion2: 'rojo',
+        opcion3: 'azul',
+    },
+    {
+        id: 2,
+        categoria: 'Rompecabezas',
+        opcion1: '5 piezas',
+        opcion2: '10 piezas',
+        opcion3: '25 piezas',
+    },
+    {
+        id: 3,
+        categoria: 'Disfraces',
+        opcion1: 'hombre araña',
+        opcion2: 'princesa',
+        opcion3: 'hulk',
+    },
+    {
+        id: 4,
+        categoria: 'Cuentos Infantiles',
+        opcion1: 'Perdido y encontrado de Oliver Jeffers',
+        opcion2: 'Atrapado de Oliver Jeffers',
+        opcion3: 'El zoo de Joaquin de Pablo Bernasconi',
+    },
+    {
+        id: 5,
+        categoria: 'Juegos de encastre',
+        opcion1: 'tematica espacio',
+        opcion2: 'tematica figuras geometricas',
+        opcion3: 'tematica animales de la granja',
 
     }
-}
+]
 
+//ARRAY DE CARRITO
+const carrito = []
+
+//FUNCIONES CREADORAS Y BUSCADORAS
+
+function productoFinal (id, categoria, opcion) {
+ globalThis.id= id,
+ globalThis.categoria=categoria,
+ globalThis.opcion=opcion
+     
+}
+function findProduct(id) {
+    return catalogoDeProductos.find((resp) => resp.id == id)
+}
+function createProduct(id, categoria, opcion) {
+    carrito.push(new productoFinal(id, categoria, opcion))
+}
+//INTERACCION CON EL USUARIO 
+//let seleccionDeTipoDeProducto = false 
+
+//while (seleccionDeTipoDeProducto == false) {
+let seleccion = parseInt(prompt("¿Que producto desea elegir?: \n 1. Tren de madera \n 2. Rompecabezas \n 3. Disfraces \n 4. Cuentos Infantiles \n 5. Juegos de encastre"))
+let producto;
+if (seleccion == 1) {
+    producto = findProduct(1)
+    console.log(producto)
+    let selectOption = parseInt(prompt(`Ha seleccionado ${producto.categoria} \n
+    ¿Que color desea seleccionar?\n
+    1. ${producto.opcion1}\n
+    2. ${producto.opcion2}\n
+    3. ${producto.opcion3}\n `)) 
+
+    if (selectOption === 1) {
+        createProduct(producto.categoria, producto.opcion1)
+    } else if (selectOption === 2) {
+        createProduct(producto.categoria, producto.opcion2)
+    } else if (selectOption === 3) {
+        createProduct(producto.categoria, producto.opcion3)
+    } else {
+        alert("Opcion no valida, ha salido del proceso de compra")
+    }
+} else if (seleccion === 2) {
+    producto = findProduct(2)
+    console.log(producto)
+    let selectOption = parseInt(prompt(`Ha seleccionado ${producto.categoria} \n
+    ¿Que cantidad de piezas desea seleccionar?\n
+    1. ${producto.opcion1} \n
+    2. ${producto.opcion2} \n
+    3. ${producto.opcion3} \n`))
+    if (selectOption === 1) {
+        createProduct(producto.categoria, producto.opcion1)
+    } else if (selectOption === 2) {
+        createProduct(producto.categoria, producto.opcion2)
+    } else if (selectOption === 3) {
+        createProduct(producto.categoria, producto.opcion3)
+    } else {
+        alert("Opcion no valida, ha salido del proceso de compra")
+    }
+} else if (seleccion === 3) {
+    producto = findProduct(3)
+    console.log(producto)
+    let selectOption = parseInt(prompt(`Ha seleccionado ${producto.categoria} \n
+    ¿Que disfraz desea seleccionar?\n
+    1. ${producto.opcion1} \n
+    2. ${producto.opcion2} \n
+    3. ${producto.opcion3} \n`))
+    if (selectOption === 1) {
+        createProduct(producto.categoria, producto.opcion1)
+    } else if (selectOption === 2) {
+        createProduct(producto.categoria, producto.opcion2)
+    } else if (selectOption === 3) {
+        createProduct(producto.categoria, producto.opcion3)
+    } else {
+        alert("Opcion no valida, ha salido del proceso de compra")
+    }
+} else if (seleccion === 4) {
+    producto = findProduct(4)
+    console.log(producto)
+    let selectOption = parseInt(prompt(`Ha seleccionado ${producto.categoria} \n
+    ¿Que título desea seleccionar?\n
+    1. ${producto.opcion1} \n
+    2. ${producto.opcion2} \n
+    3. ${producto.opcion3} \n`))
+    if (selectOption === 1) {
+        createProduct(producto.categoria, producto.opcion1)
+    } else if (selectOption === 2) {
+        createProduct(producto.categoria, producto.opcion2)
+    } else if (selectOption === 3) {
+        createProduct(producto.categoria, producto.opcion3)
+    } else {
+        alert("Opcion no valida, ha salido del proceso de compra")
+    } 
+} else if (seleccion === 5) {
+    producto = findProduct(5)
+    console.log(producto)
+    let selectOption = parseInt(prompt(`Ha seleccionado ${producto.categoria} \n
+    ¿Que temática desea seleccionar?\n
+    1. ${producto.opcion1} \n
+    2. ${producto.opcion2} \n
+    3. ${producto.opcion3} \n`))
+    if (selectOption === 1) {
+        createProduct(producto.categoria, producto.opcion1)
+    } else if (selectOption === 2) {
+        createProduct(producto.categoria, producto.opcion2)
+    } else if (selectOption === 3) {
+        createProduct(producto.categoria, producto.opcion3)
+    } else {
+        alert("Opcion no valida, ha salido del proceso de compra")
+    } 
+}
+for (const product of carrito) {
+    console.log(product)
+}
 //Calcular precio por cantidad
 
 let ingreso = prompt("Ingresar cantidad deseada")
@@ -266,5 +290,4 @@ function gracias2() {
 }
 
 gracias2();
-console.dir (document) 
-
+console.dir(document)
