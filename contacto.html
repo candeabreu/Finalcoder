@@ -86,7 +86,7 @@
             <div class="formularioContacto">
                 <!-- NOMBRE FORMULARIO -->
                 <label for="full-name" class="opcionFormulario">Nombre completo:</label> <br>
-                <input type="text" id="full-name"> <br>
+                <input type="text" id="full-name" class="txtNombre"> <br>
                 <!-- EMAIL FORMULARIO -->
                 <label for="email" class="opcionFormulario">Email:</label> <br>
                 <input type="email" name="email" id="email"> <br>
@@ -99,8 +99,11 @@
 
             </div>
             <div class="boton">
-                <button type="submit" class="btn btn-outline-primary botonEnviar">Enviar</button>
+                <button type="button" class="btn btn-outline-primary botonEnviar" id="btnEnviar">Enviar</button>
             </div>
+
+            <div><p id="mensajeEnviar"></p></div>
+            <div><p id="areaDeMensaje"></p></div>
         </form>
 
 
@@ -142,6 +145,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
     </script>
+    <!-- JAVASCRIPT -->
+  <script src="javascript/formulario.js"></script>
 </body>
 
 </html>

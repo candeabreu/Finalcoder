@@ -9,7 +9,6 @@ header .navNuevo {
   display: flex;
   justify-content: flex-end;
 }
-
 header .navNuevo .container-fluid .logoNavbar {
   height: 90px;
 }
@@ -39,7 +38,6 @@ header .navNuevo .container-fluid .logoNavbar {
     display: none;
   }
 }
-
 /* Mapas */
 /*FOOTER*/
 .pieDePagina {
@@ -52,12 +50,10 @@ header .navNuevo .container-fluid .logoNavbar {
   max-width: 100vw;
   height: auto;
 }
-
 .pieDePagina .tituloContacto {
   padding-top: 15px;
   font-family: "tipografianueva";
 }
-
 .pieDePagina .tituloContacto .textoDeContacto {
   padding-top: 20px;
 }
@@ -70,7 +66,6 @@ header .navNuevo .container-fluid .logoNavbar {
   overflow: hidden;
   padding: 10px;
 }
-
 .logosDeContacto .logosIndividuales {
   width: 45px;
   height: 45px;
@@ -82,6 +77,10 @@ header .navNuevo .container-fluid .logoNavbar {
   font-family: "tipografianueva";
   src: url(tipografias/tipografianueva.woff);
   font-display: swap;
+}
+.main .parrafoIndex {
+  font-family: "tipografianueva";
+  font-size: 15px;
 }
 
 /* Carrusel */
@@ -95,7 +94,6 @@ header .navNuevo .container-fluid .logoNavbar {
   padding-bottom: 20px;
   color: #fff;
 }
-
 .tituloCarousel .tituloInicio {
   color: white;
   text-align: center;
@@ -105,7 +103,6 @@ header .navNuevo .container-fluid .logoNavbar {
   line-height: 50px;
   /* ANIMACIONES TITULO INDEX*/
 }
-
 .tituloCarousel .tituloInicio:hover {
   letter-spacing: 0%;
   font-size: 35px;
@@ -127,7 +124,6 @@ main {
   background-color: #FCF7BB;
   height: auto;
 }
-
 main section .carrusel {
   padding: 1%;
 }
@@ -150,7 +146,6 @@ main .imagenCarrito .carritoCompras {
   left: 48%;
   padding-bottom: 2%;
 }
-
 main .imagenCarrito .carritoCompras:hover {
   transform: scale(1.3);
   transition: all 2s;
@@ -164,7 +159,6 @@ main .imagenCarrito .carritoCompras:hover {
   width: 100%;
   height: 750px;
 }
-
 .contenidoPrincipal section .textoDePresentacion {
   color: black;
   padding: 69px;
@@ -184,7 +178,6 @@ main .imagenCarrito .carritoCompras:hover {
   height: auto;
   display: grid;
 }
-
 .mainProductos .tituloProductos {
   color: black;
   display: flex;
@@ -207,7 +200,6 @@ main .imagenCarrito .carritoCompras:hover {
   row-gap: 10px;
   padding: 20px;
 }
-
 .galeriaProductos .productosItem {
   width: 350px;
   height: 350px;
@@ -215,7 +207,6 @@ main .imagenCarrito .carritoCompras:hover {
   -moz-box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.49);
   box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.49);
 }
-
 .galeriaProductos .productosItem:hover {
   z-index: 2;
   width: 400px;
@@ -231,7 +222,6 @@ main .imagenCarrito .carritoCompras:hover {
   height: auto;
   display: grid;
 }
-
 .mainAlquilerDeEspacios div .subtituloAlquiler {
   font-size: 30px;
   font-family: "tipografianueva";
@@ -257,7 +247,6 @@ main .imagenCarrito .carritoCompras:hover {
   grid-template-rows: 310px 310px;
   justify-content: center;
 }
-
 .galeriaAlquiler .fotosAlquiler {
   width: 300px;
   height: 300px;
@@ -268,17 +257,14 @@ main .imagenCarrito .carritoCompras:hover {
 
 /* RESPONSIVE MOBILE */
 @media screen and (max-width: 450px) {
-
   /* HEADER */
   header .navNuevo .container-fluid .logoNavbar {
     height: 40px;
   }
-
   header .navNuevo .container-fluid .logoNavbar .opcionesMenu {
     display: flex;
     justify-items: start;
   }
-
   /* FOOTER */
   .pieDePagina {
     background-color: #FFF89A;
@@ -289,40 +275,33 @@ main .imagenCarrito .carritoCompras:hover {
     width: 100%;
     height: 50vw;
   }
-
   .pieDePagina .tituloContacto {
     position: relative;
   }
-
   .pieDePagina .tituloContacto .tituloDeContacto {
     display: flex;
     justify-content: center;
     position: relative;
     left: 1%;
   }
-
   /* logos redes sociales */
   .logosDeContacto {
     padding: 10px;
   }
-
   .logosDeContacto .logosIndividuales {
     width: 30px;
     height: 30px;
     padding: 3px;
   }
-
   /* INDEX CARRUSEL MOBILE */
   main {
     height: auto;
     background-color: rgba(255, 248, 154, 0.5803921569);
   }
-
   main section .carrusel {
     padding-top: 5%;
     padding-bottom: 5%;
   }
-
   /* TITULO MEDIA QUERY */
   main .tituloMediaQuery {
     display: flex;
@@ -331,7 +310,6 @@ main .imagenCarrito .carritoCompras:hover {
     font-size: 25px;
     padding-top: 7%;
   }
-
   /* SUBTITULO MEDIAQUERY */
   main .tituloDos .subtituloDos {
     display: flex;
@@ -341,7 +319,6 @@ main .imagenCarrito .carritoCompras:hover {
     letter-spacing: 2px;
     line-height: 30px;
   }
-
   /* IMAGEN CARRITO MEDIA QUERY*/
   main .imagenCarrito .carritoCompras {
     width: 50px;
@@ -349,7 +326,6 @@ main .imagenCarrito .carritoCompras:hover {
     left: 45%;
     padding-bottom: 8%;
   }
-
   /* NOSOTROS MOBILE */
   .contenidoPrincipal {
     width: 100vw;
@@ -357,7 +333,6 @@ main .imagenCarrito .carritoCompras:hover {
     padding: 0%;
     height: auto;
   }
-
   .contenidoPrincipal section .textoDePresentacion {
     font-size: 20px;
     top: 20px;
@@ -366,7 +341,6 @@ main .imagenCarrito .carritoCompras:hover {
     padding-top: 30%;
     background-color: transparent;
   }
-
   /* PRODUCTOS MOBILE */
   .mainProductos .tituloProductos {
     padding-top: 5%;
@@ -375,7 +349,6 @@ main .imagenCarrito .carritoCompras:hover {
     font-size: 25px;
     line-height: 2;
   }
-
   /* GRID GALERIA PRODUCTOS */
   .galeriaProductos {
     display: grid;
@@ -385,7 +358,6 @@ main .imagenCarrito .carritoCompras:hover {
     padding: 3%;
     justify-items: center;
   }
-
   .galeriaProductos .productosItem {
     width: 350px;
     height: 350px;
@@ -393,7 +365,6 @@ main .imagenCarrito .carritoCompras:hover {
     -moz-box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.49);
     box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.49);
   }
-
   /* ALQUILER DE ESPACIOS MOBILE */
   .mainAlquilerDeEspacios div .subtituloAlquiler {
     font-size: 20px;
@@ -402,13 +373,11 @@ main .imagenCarrito .carritoCompras:hover {
     position: relative;
     left: 0px;
   }
-
   .galeria .titulosEspaciosDeAlquiler {
     font-size: 18px;
     position: relative;
     right: 0px;
   }
-
   /*GALERIA ALQUILER DE ESPACIOS GRID*/
   .galeriaAlquiler {
     display: grid;
@@ -419,28 +388,23 @@ main .imagenCarrito .carritoCompras:hover {
     position: relative;
     right: 0;
   }
-
   /* CONTACTO MOBILE */
   .mainContacto .tituloSeccionContacto {
     text-size-adjust: 25px;
   }
 }
-
 /* RESPONSIVE TABLET */
 @media screen and (min-width: 451px) and (max-width: 960px) {
-
   /* FOOTER */
   .pieDePagina {
     height: auto;
   }
-
   /* PRODUCTOS TABLET*/
   .mainProductos .tituloProductos {
     font-size: 20px;
     padding-right: 10%;
     padding-top: 5%;
   }
-
   /* GRID GALERIA PRODUCTOS */
   .galeriaProductos {
     display: grid;
@@ -449,13 +413,11 @@ main .imagenCarrito .carritoCompras:hover {
     width: 91vw;
     padding: 2%;
   }
-
   .galeriaProductos .productosItem {
     width: 230px;
     height: 230px;
     display: flex;
   }
-
   /* ALQUILER DE ESPACIOS MOBILE */
   .mainAlquilerDeEspacios div .subtituloAlquiler {
     font-size: 15px;
@@ -464,7 +426,6 @@ main .imagenCarrito .carritoCompras:hover {
     position: relative;
     left: 0px;
   }
-
   .galeria .titulosEspaciosDeAlquiler {
     font-size: 10px;
     width: 100vw;
@@ -472,7 +433,6 @@ main .imagenCarrito .carritoCompras:hover {
     right: 12px;
     line-height: 2;
   }
-
   /*GALERIA ALQUILER DE ESPACIOS GRID*/
   .galeriaAlquiler {
     display: grid;
@@ -483,13 +443,11 @@ main .imagenCarrito .carritoCompras:hover {
     position: relative;
     right: 12px;
   }
-
   .galeriaAlquiler .fotosAlquiler {
     width: 180px;
     height: 180px;
   }
 }
-
 /* Mapas */
 header .navNuevo {
   background-color: #FFF89A;
@@ -502,7 +460,6 @@ header .navNuevo {
   width: auto;
   height: auto;
 }
-
 .mainContacto .tituloSeccionContacto {
   margin: 0;
   font-family: "tipografiaNueva";
@@ -517,7 +474,6 @@ form .formularioContacto {
   text-align: center;
   padding: 3%;
 }
-
 form .formularioContacto .opcionFormulario {
   font-family: "Text Me One", sans-serif;
   font-size: 20px;
@@ -529,7 +485,6 @@ form .boton {
   justify-content: center;
   padding-bottom: 2%;
 }
-
 form .boton .botonEnviar {
   position: relative;
   top: 1%;
@@ -538,20 +493,35 @@ form .boton .botonEnviar {
   color: black;
   border: solid 2px #ffffff;
 }
-
 form .boton .botonEnviar:hover {
   background-color: rgba(255, 255, 0, 0.548);
 }
 
-
-.parrafoBienvenida2 {
+/*edicion index*/
+.ingresoBienvenida {
   display: flex;
   justify-content: center;
-  font-family: "tipografianueva";
-  font-size: 25px;
-  color: black;
-  padding-top: 15px;
- 
 }
-
+.parrafoBienvenida2 {
+  font-family: "tipografiaNueva";
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  padding-top: 2%;
+}
+.ingresaNombreIndex {
+  font-family: "Text Me One", sans-serif;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+.txtNombre {
+  display: flex;
+  justify-content: center;
+  height: 4vh;
+}
+.btnOK {
+  font-family: "Text Me One", sans-serif;
+  width: 3vw;
+}
 /*# sourceMappingURL=style.css.map */

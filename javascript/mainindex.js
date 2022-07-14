@@ -291,3 +291,16 @@ function gracias2() {
 
 gracias2();
 console.dir(document)
+
+//INGRESO DE NOMBRE 
+
+/* const nombreIngreso = document.getElementById("full-name2")
+const botonOK = document.getElementById ("btnIndex")
+const h2 = document.getElementById("parrafoBienvenida")
+h2.className = "parrafoBienvenida2"
+
+botonOK.addEventListener("click", () => {
+   
+      h2.innerText =`TE DAMOS LA BIENVENIDA ${nombreIngreso.value} A MIRE TIENDA DE NIÑOS/AS - 3 Y 6 CUOTAS SIN INTERES `;
+      
+}) */
