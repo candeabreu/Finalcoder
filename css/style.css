@@ -509,19 +509,20 @@ form .boton .botonEnviar:hover {
   justify-content: center;
   padding-top: 2%;
 }
-.ingresaNombreIndex {
-  font-family: "Text Me One", sans-serif;
-  font-size: 20px;
+
+.mensajeEnviar2 {
+  font-family: "tipografiaNueva";
+  font-size: 25px;
   display: flex;
   justify-content: center;
+  margin: 0%;
+
 }
-.txtNombre {
+#areaDeMensaje {
+  font-family: "tipografiaNueva";
+  font-size: 25px;
   display: flex;
   justify-content: center;
-  height: 4vh;
-}
-.btnOK {
-  font-family: "Text Me One", sans-serif;
-  width: 3vw;
+  margin: 0%;
 }
 /*# sourceMappingURL=style.css.map */
