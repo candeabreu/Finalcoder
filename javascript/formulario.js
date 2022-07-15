@@ -36,15 +36,14 @@ formulario.addEventListener ("submit" , (e)=> {
     e.preventDefault();
     console.log (e.target)
    
-    if (inputNombreCompleto.value == "" || inputEmail.value == "" || inputNumero.value == "") {
+    if (inputNombreCompleto.value == "" || inputEmail.value == "" || inputNumero.value == "" || inputMensaje.value == "") {
         mensajeEnviar.innerText = "Complete todos los campos requeridos"
     } else {
         mensajeEnviar.innerText = "Mensaje enviado"}
     
 })
-
+ 
 botonEnviar.addEventListener("click", () => {
-
 
     if (inputMensaje.value == "") {
         areaDeMensaje.innerText = "Escriba su consulta o comentario"
