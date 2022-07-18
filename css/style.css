@@ -78,11 +78,6 @@ header .navNuevo .container-fluid .logoNavbar {
   src: url(tipografias/tipografianueva.woff);
   font-display: swap;
 }
-.main .parrafoIndex {
-  font-family: "tipografianueva";
-  font-size: 15px;
-}
-
 /* Carrusel */
 .tituloCarousel {
   position: absolute;
@@ -497,11 +492,7 @@ form .boton .botonEnviar:hover {
   background-color: rgba(255, 255, 0, 0.548);
 }
 
-/*edicion index*/
-.ingresoBienvenida {
-  display: flex;
-  justify-content: center;
-}
+
 .parrafoBienvenida2 {
   font-family: "tipografiaNueva";
   font-size: 25px;
@@ -525,5 +516,28 @@ form .boton .botonEnviar:hover {
   justify-content: center;
   margin: 0%;
 }
+ /*EDICION FORMULARIO*/
+.formularioDeBienvenida2 {
+  display: flex;
+  justify-content: center;
+  
+}
+.nombreBienvenida {
+  height: 25px;
+  padding: 4px;
+}
+ .opcionFormularioBienvenida {
+  font-family: "tipografiaNueva";
+  font-size: 20px;
 
+ }
+.botonBienvenida {
+  display: flex;
+  justify-content: center;
+  font-family: "tipografiaNueva";
+  font-size: 10px;
+  padding: 4px;
+  
+ 
+}
 /*# sourceMappingURL=style.css.map */

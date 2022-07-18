@@ -8,41 +8,35 @@ const inputEmail = document.getElementById("email")
 const inputNumero = document.getElementById("number")
 const inputMensaje = document.getElementById("massege")
 const respuestaMensaje = document.getElementById("areaDeMensaje")
-const formulario = document.getElementById ("formularioContacto")
+const formulario = document.getElementById("formularioContacto")
 
-/*
-botonEnviar.addEventListener("click", () => {
-
-    if (inputNombreCompleto.value == "" || inputEmail.value == "" || inputNumero.value == "") {
-        mensajeEnviar.innerText = "Complete todos los campos requeridos"
-    } else {
-
-        mensajeEnviar.innerText = `Los datos ingresados son:
-         \n ${inputNombreCompleto.value} 
-         \n ${inputEmail.value}
-         \n ${inputNumero.value}`
-    }
-    if (inputMensaje.value == "") {
-        areaDeMensaje.innerText = "Escriba su consulta o comentario"
-    } else if (inputNombreCompleto.value == "" || inputEmail.value == "" || inputNumero.value == "") {
-        areaDeMensaje.innerText = ""
-
-    } else {
-        areaDeMensaje.innerText = "Recibimos su mensaje, sera respondido a la brevedad a los datos anteriormente solicitados"
-    }
-})*/
-
-formulario.addEventListener ("submit" , (e)=> {
+formulario.addEventListener("submit", (e) => {
     e.preventDefault();
-    console.log (e.target)
+    console.log(e.target)
    
+
     if (inputNombreCompleto.value == "" || inputEmail.value == "" || inputNumero.value == "" || inputMensaje.value == "") {
         mensajeEnviar.innerText = "Complete todos los campos requeridos"
     } else {
-        mensajeEnviar.innerText = "Mensaje enviado"}
-    
+        mensajeEnviar.innerText = "Mensaje enviado"
+    }
+
 })
- 
+
+// Guardar nombre en Local Storage
+
+function guardarLS2(valores) {
+    let datosUsuario = {
+        Nombre: inputNombreCompleto.value,
+        Email: inputEmail.value,
+        Numero: inputNumero.value,
+        Mensaje: inputMensaje.value
+    };
+
+    localStorage.setItem('datosUsuario', JSON.stringify(datosUsuario))
+
+}
+
 botonEnviar.addEventListener("click", () => {
 
     if (inputMensaje.value == "") {
@@ -52,4 +46,6 @@ botonEnviar.addEventListener("click", () => {
 
     } else {
         areaDeMensaje.innerText = "Recibimos su mensaje, sera respondido a la brevedad a los datos anteriormente solicitados"
-    }})
+    }
+    guardarLS2()
+})
