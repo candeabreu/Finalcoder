@@ -1,0 +1,79 @@
+/* RESETEO UNIVERSAL*/
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.mainCarritoDeCompras {
+
+    .gridCarrito {
+        padding-top: 4%;
+
+        .columnaCarrito {
+            font-family: "tipografiaNueva";
+            font-size: 25px;
+
+            .subtitulo {
+                font-size: 18px;
+
+                .imgAuto {
+                    width: 200px;
+                    height: 200px;
+                    -webkit-box-shadow: 2px -1px 36px -15px rgba(0, 0, 0, 0.75);
+                    -moz-box-shadow: 2px -1px 36px -15px rgba(0, 0, 0, 0.75);
+                    box-shadow: 2px -1px 36px -15px rgba(0, 0, 0, 0.75);
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+.mainCarritoDeCompras {
+    .titulo {
+        display: flex;
+        justify-content: center;
+        padding-top: 3%;
+
+        .tituloCarrito {
+            font-family: "tipografiaNueva";
+        }
+    }
+}
+
+.mainCarritoDeCompras {
+
+    .gridCarrito {
+        padding-top: 2%;
+        padding-bottom: 2%;
+
+        .columnaCarrito {
+            font-family: "tipografiaNueva";
+            font-size: 25px;
+
+            .btnCarrito {
+                margin: 3%;
+                color: black;
+                background-color: rgba(255, 255, 0, 0.63);
+
+            }
+
+        }
+    }
+}
+
+.mainCarritoDeCompras {
+    .buscador {
+        display: flex;
+        justify-content: center;
+        padding: 2%;
+        width: 35%;
+        position: relative;
+        left: 33%;
+        .btnBuscador {
+            font-family: 'Text Me One', sans-serif;
+            background-color: rgba(255, 255, 0, 0.63);
+        }
+    }
+}
