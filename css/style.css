@@ -559,7 +559,7 @@ form .boton .botonEnviar:hover {
   font-size: 25px;
   display: flex;
   justify-content: center;
-  padding-top: 2%;
+  padding: 2%;
 }
 
 .mensajeEnviar2 {
@@ -601,5 +601,7 @@ form .boton .botonEnviar:hover {
   
  
 }
+
+
 
 /*# sourceMappingURL=style.css.map */
