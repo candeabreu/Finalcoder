@@ -16,9 +16,35 @@ formulario.addEventListener("submit", (e) => {
    
 
     if (inputNombreCompleto.value == "" || inputEmail.value == "" || inputNumero.value == "" || inputMensaje.value == "") {
-        mensajeEnviar.innerText = "Complete todos los campos requeridos"
+        mensajeEnviar = Toastify({
+            text: "Complete todos los datos requeridos",
+            duration: 3000,
+            destination: "https://github.com/apvarun/toastify-js",
+            newWindow: true,
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "center", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+              background: "linear-gradient(to right, #FFDEB4 , #F4E06D)",
+            },
+            onClick: function(){} // Callback after click
+          }).showToast();
     } else {
-        mensajeEnviar.innerText = "Mensaje enviado"
+        mensajeEnviar = Toastify({
+            text: "Mensaje enviado",
+            duration: 3000,
+            destination: "https://github.com/apvarun/toastify-js",
+            newWindow: true,
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "center", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+              background: "linear-gradient(to right, #FFDEB4 , #F4E06D)",
+            },
+            onClick: function(){} // Callback after click
+          }).showToast();
     }
 
 })
@@ -39,13 +65,39 @@ function guardarLS2(valores) {
 
 botonEnviar.addEventListener("click", () => {
 
-    if (inputMensaje.value == "") {
-        areaDeMensaje.innerText = "Escriba su consulta o comentario"
+    if (inputMensaje.value == "" ) {
+        areaDeMensaje = Toastify({
+            text: "Escriba su mensaje o consulta",
+            duration: 3000,
+            destination: "https://github.com/apvarun/toastify-js",
+            newWindow: true,
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "center", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+              background: "linear-gradient(to right, #FFDEB4 , #F4E06D)",
+            },
+            onClick: function(){} // Callback after click
+          }).showToast();
     } else if (inputNombreCompleto.value == "" || inputEmail.value == "" || inputNumero.value == "") {
         areaDeMensaje.innerText = ""
 
     } else {
-        areaDeMensaje.innerText = "Recibimos su mensaje, sera respondido a la brevedad a los datos anteriormente solicitados"
+        areaDeMensaje = Toastify({
+            text: "Serás contactado a la brevedad",
+            duration: 3000,
+            destination: "https://github.com/apvarun/toastify-js",
+            newWindow: true,
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "center", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+              background: "linear-gradient(to right, #FFDEB4 , #F4E06D)",
+            },
+            onClick: function(){} // Callback after click
+          }).showToast();
     }
     guardarLS2()
 })
