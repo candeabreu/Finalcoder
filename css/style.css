@@ -498,24 +498,32 @@ form .boton .botonEnviar:hover {
   padding: 0%;
 }
 
-.mainCarritoDeCompras .gridCarrito {
-  padding-top: 4%;
-}
-.mainCarritoDeCompras .gridCarrito .columnaCarrito {
+.mainCarritoDeCompras .carritoMain {
+  display: flex;
   font-family: "tipografiaNueva";
-  font-size: 25px;
+  text-align: center;
 }
-.mainCarritoDeCompras .gridCarrito .columnaCarrito .subtitulo {
-  font-size: 18px;
-}
-.mainCarritoDeCompras .gridCarrito .columnaCarrito .subtitulo .imgAuto {
-  width: 200px;
-  height: 200px;
+.mainCarritoDeCompras .carritoMain .gridCarrito {
   -webkit-box-shadow: 2px -1px 36px -15px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 2px -1px 36px -15px rgba(0, 0, 0, 0.75);
   box-shadow: 2px -1px 36px -15px rgba(0, 0, 0, 0.75);
+}
+.mainCarritoDeCompras .carritoMain .gridCarrito .imagenesCarrito {
   display: flex;
-  justify-content: center;
+  justify-items: center;
+  width: 200px;
+  height: 200px;
+  left: 20px;
+}
+
+.mainCarritoDeCompras .carritoMain .gridCarrito {
+  display: grid;
+  columns: 3;
+}
+.mainCarritoDeCompras .carritoMain .gridCarrito .contenedor .btnCarrito {
+  margin: 3%;
+  color: black;
+  background-color: rgba(255, 255, 0, 0.63);
 }
 
 .mainCarritoDeCompras .titulo {
@@ -527,33 +535,12 @@ form .boton .botonEnviar:hover {
   font-family: "tipografiaNueva";
 }
 
-.mainCarritoDeCompras .gridCarrito {
-  padding-top: 2%;
-  padding-bottom: 2%;
-}
-.mainCarritoDeCompras .gridCarrito .columnaCarrito {
-  font-family: "tipografiaNueva";
-  font-size: 25px;
-}
-.mainCarritoDeCompras .gridCarrito .columnaCarrito .btnCarrito {
+.btnEliminar {
   margin: 3%;
   color: black;
-  background-color: rgba(255, 255, 0, 0.63);
+  background-color:bisque;
 }
-
-.mainCarritoDeCompras .buscador {
-  display: flex;
-  justify-content: center;
-  padding: 2%;
-  width: 35%;
-  position: relative;
-  left: 33%;
-}
-.mainCarritoDeCompras .buscador .btnBuscador {
-  font-family: "Text Me One", sans-serif;
-  background-color: rgba(255, 255, 0, 0.63);
-}
-
+/*EDICION ELEMENTOS JAVA*/
 .parrafoBienvenida2 {
   font-family: "tipografiaNueva";
   font-size: 25px;

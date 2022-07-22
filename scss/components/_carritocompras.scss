@@ -5,25 +5,39 @@
 }
 
 .mainCarritoDeCompras {
+    .carritoMain {
+        display: flex;
+        font-family: 'tipografiaNueva';
+        text-align: center;
 
-    .gridCarrito {
-        padding-top: 4%;
+        .gridCarrito {
+            -webkit-box-shadow: 2px -1px 36px -15px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 2px -1px 36px -15px rgba(0, 0, 0, 0.75);
+            box-shadow: 2px -1px 36px -15px rgba(0, 0, 0, 0.75);
+            width: 13vw;
+            .imagenesCarrito {
+                display: flex;
+                justify-items: center;
+                width: 250px;
+                height: 250px;
+        
+                
+            }
+        }
+    }
+}
 
-        .columnaCarrito {
-            font-family: "tipografiaNueva";
-            font-size: 25px;
+.mainCarritoDeCompras {
+    .carritoMain {
+        .gridCarrito {
+            display: grid;
+            columns: 3;
 
-            .subtitulo {
-                font-size: 18px;
-
-                .imgAuto {
-                    width: 200px;
-                    height: 200px;
-                    -webkit-box-shadow: 2px -1px 36px -15px rgba(0, 0, 0, 0.75);
-                    -moz-box-shadow: 2px -1px 36px -15px rgba(0, 0, 0, 0.75);
-                    box-shadow: 2px -1px 36px -15px rgba(0, 0, 0, 0.75);
-                    display: flex;
-                    justify-content: center;
+            .contenedor {
+                .btnCarrito {
+                    margin: 3%;
+                    color: black;
+                    background-color: rgba(255, 255, 0, 0.63);
                 }
             }
         }
@@ -42,38 +56,3 @@
     }
 }
 
-.mainCarritoDeCompras {
-
-    .gridCarrito {
-        padding-top: 2%;
-        padding-bottom: 2%;
-
-        .columnaCarrito {
-            font-family: "tipografiaNueva";
-            font-size: 25px;
-
-            .btnCarrito {
-                margin: 3%;
-                color: black;
-                background-color: rgba(255, 255, 0, 0.63);
-
-            }
-
-        }
-    }
-}
-
-.mainCarritoDeCompras {
-    .buscador {
-        display: flex;
-        justify-content: center;
-        padding: 2%;
-        width: 35%;
-        position: relative;
-        left: 33%;
-        .btnBuscador {
-            font-family: 'Text Me One', sans-serif; 
-            background-color: rgba(255, 255, 0, 0.63);
-        }
-    }
-}
