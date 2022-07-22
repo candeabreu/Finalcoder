@@ -45,11 +45,11 @@ const enterCart = (r) => {
 
 const eliminarCart = (r) => {
 
-    carrito.slice(productosMireTienda.find((p) => p.id == r))
+    carrito.slice(carrito.find((p) => p.id == r))
     console.log(carrito)
 }
 
-
+   
 let html = productosMireTienda.map((productos) => {
     return (
 
