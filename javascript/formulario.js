@@ -26,7 +26,7 @@ formulario.addEventListener("submit", (e) => {
             position: "center", // `left`, `center` or `right`
             stopOnFocus: true, // Prevents dismissing of toast on hover
             style: {
-              background: "linear-gradient(to right, #FFDEB4 , #F4E06D)",
+              background: "linear-gradient(to right, #EB1D36 , #EB1D36)",
             },
             onClick: function(){} // Callback after click
           }).showToast();
@@ -41,7 +41,7 @@ formulario.addEventListener("submit", (e) => {
             position: "center", // `left`, `center` or `right`
             stopOnFocus: true, // Prevents dismissing of toast on hover
             style: {
-              background: "linear-gradient(to right, #FFDEB4 , #F4E06D)",
+              background: "linear-gradient(to right, #EB1D36 , #EB1D36)",
             },
             onClick: function(){} // Callback after click
           }).showToast();
@@ -76,7 +76,7 @@ botonEnviar.addEventListener("click", () => {
             position: "center", // `left`, `center` or `right`
             stopOnFocus: true, // Prevents dismissing of toast on hover
             style: {
-              background: "linear-gradient(to right, #FFDEB4 , #F4E06D)",
+              background: "linear-gradient(to right, #EB1D36 , #EB1D36)",
             },
             onClick: function(){} // Callback after click
           }).showToast();
@@ -94,7 +94,7 @@ botonEnviar.addEventListener("click", () => {
             position: "center", // `left`, `center` or `right`
             stopOnFocus: true, // Prevents dismissing of toast on hover
             style: {
-              background: "linear-gradient(to right, #FFDEB4 , #F4E06D)",
+              background: "linear-gradient(to right, #EB1D36 , #EB1D36)",
             },
             onClick: function(){} // Callback after click
           }).showToast();

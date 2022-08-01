@@ -3,58 +3,122 @@ const productosMireTienda = [{
         nombre: "Autos de madera",
         precio: 500,
         img: "css/imagenes/autos.jpg",
-        info: "Disponible en 3 colores"
+        info: "Madera laqueada"
     },
     {
         id: 2,
-        nombre: "Disfraces",
+        nombre: "Disfraz capa y antifaz",
         precio: 750,
         img: "css/imagenes/disfraz.jpg",
-        info: "Disponible en 3 modelos"
+        info: "talles disponibles"
     }, {
         id: 3,
-        nombre: "Juegos de encastre",
+        nombre: "Juego de encastre ",
         precio: 1200,
         img: "css/imagenes/encastre.jpg",
-        info: "Disponible en 3 tematicas"
+        info: "tuercas de colores"
     }, {
         id: 4,
-        nombre: "Libros infantiles",
+        nombre: "Libro: Miedoso",
         precio: 850,
-        img: "css/imagenes/libropablo.png",
-        info: "Oliver Jeffers-Pablo Bernasconi-Graciela Montes"
+        img: "css/imagenes/libromiedoso.jpg",
+        info: "Autor:Pablo Bernasconi"
     }, {
         id: 5,
-        nombre: "Rompecabezas",
+        nombre: "Libro: Orejas de mariposa",
         precio: 1100,
-        img: "css/imagenes/rompecabezas2.png",
-        info: "Cantidad de piezas: 4, 6 y 10"
+        img: "css/imagenes/libromariposas.jfif",
+        info: "Autora: Luisa Aguilar"
     },
+    {
+        id: 6,
+        nombre: "Libro: Hipo no nada",
+        precio: 1100,
+        img: "css/imagenes/librohipononada.jfif",
+        info: "Autor: Pablo Bernasconi"
+    },
+    {
+        id: 7,
+        nombre: "Libro: Como atrapar una estrella",
+        precio: 1100,
+        img: "css/imagenes/librocomoatraparestrella.jpg",
+        info: "Autor: Oliver Jeffers"
+    },
+     {
+        id: 8,
+        nombre: "Libro: Burundí",
+        precio: 1100,
+        img: "css/imagenes/libropabloburundi2.png",
+        info: "Autor: Pablo Bernasconi"
+    } ,
+    {
+       id: 9,
+       nombre: "Libro: El zoo de Joaquin",
+       precio: 600,
+       img: "css/imagenes/librozoodejoa.png",
+       info: "Autor: Pablo Bernasconi"
+   }, 
+   {
+    id: 10,
+    nombre: "Bloques para construir",
+    precio: 5000,
+    img: "css/imagenes/construccion.jpg",
+    info: "30 piezas imantadas de colores"
+},{
+    id: 11,
+    nombre: "Camara fotografica",
+    precio: 2000,
+    img: "css/imagenes/camarafotografica.jpg",
+    info: "material: madera"
+},{
+    id: 12,
+    nombre: "Muñecos de apego",
+    precio: 2000,
+    img: "css/imagenes/muñecosdeapego.jpg",
+    info: "25 bloques de colores"
+},
 
 ]
 
-const carrito = []
-const contenedorCarrito = document.getElementById("contenedorCarrito")
+let carrito = []
+let contenedorCarrito = document.getElementById("contenedorCarrito"),
+mensajeCarrito2 = document.getElementById ("mensajeCarrito"),
+productosAgregados = document.getElementById ("productosAgregados")
 
-const enterCart = (r) => {
+let enterCart = (r) => {
 
     carrito.push(productosMireTienda.find((p) => p.id == r))
-    console.log(carrito)
+    console.log (carrito)
+
+    mensajeCarrito2 = Toastify({
+        text:  "Agregaste productos al carrito" ,
+        duration: 3000,
+        destination: "https://github.com/apvarun/toastify-js",
+        newWindow: true,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "center", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "linear-gradient(to right, #EB1D36 , #EB1D36)",
+        },
+        onClick: function(){} // Callback after click
+      }).showToast();
 }
 
 
-const eliminarCart = (r) => {
+ let eliminarCart = (id) => {
 
-    carrito.slice(carrito.find((p) => p.id == r))
+    carrito = carrito.filter((p) => p.id != id)
     console.log(carrito)
 }
+ 
 
-   
 let html = productosMireTienda.map((productos) => {
     return (
 
         `
-    <div class="card gridCarrito" style="width: 18rem;">
+    <div class="card gridCarrito col-4" style="width: 18rem;">
         <img src=${productos.img} class="card-img-top imagenesCarrito" alt="imagenes" id: "imagenesdelCarrito">
         <div class="card-body contenedor">
           <h5 class="card-title"> ${productos.nombre}</h5>
@@ -62,12 +126,13 @@ let html = productosMireTienda.map((productos) => {
           <button type="button" onClick= "enterCart(${productos.id})"class="btn btn-light btnCarrito" id="btnCarrito">Agregar al
                 carrito</button>
                 <button type="button" onClick= "eliminarCart(${productos.id})"class="btn btn-light btnEliminar" id="btnCarrito">Eliminar del carrito</button>
-
+            
         </div>
-      </div>
-      `
+      </div>`
     )
 })
 
 contenedorCarrito.innerHTML = html
+
 console.log(carrito)
+

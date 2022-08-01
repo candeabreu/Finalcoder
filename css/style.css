@@ -502,15 +502,19 @@ form .boton .botonEnviar:hover {
   display: flex;
   font-family: "tipografiaNueva";
   text-align: center;
+  width: 100vw;
+
 }
 .mainCarritoDeCompras .carritoMain .gridCarrito {
   -webkit-box-shadow: 2px -1px 36px -15px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 2px -1px 36px -15px rgba(0, 0, 0, 0.75);
   box-shadow: 2px -1px 36px -15px rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  margin: 2%;
 }
 .mainCarritoDeCompras .carritoMain .gridCarrito .imagenesCarrito {
-  display: flex;
-  justify-items: center;
+  margin: auto auto;
   width: 200px;
   height: 200px;
   left: 20px;
@@ -546,7 +550,7 @@ form .boton .botonEnviar:hover {
   font-size: 25px;
   display: flex;
   justify-content: center;
-  padding: 2%;
+  padding: 1%;
 }
 
 .mensajeEnviar2 {
@@ -588,5 +592,36 @@ form .boton .botonEnviar:hover {
   
  
 }
+
+.carritoMain {
+  display: flex;
+  font-family: "tipografiaNueva";
+  text-align: center;
+  justify-content: center;
+
+}
+
+.iconoCarrito {
+  width: 40px;
+  position: relative;
+  
+}
+
+.imagenCarritoPadre {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+
+}
+
+/*EDICION CARRITO*/
+.tituloCarrito {
+  font-family: "tipografiaNueva";
+  display: flex;
+  justify-content: center;
+}
+
+
+
 
 /*# sourceMappingURL=style.css.map */
