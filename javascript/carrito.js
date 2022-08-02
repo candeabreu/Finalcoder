@@ -44,73 +44,76 @@ const productosMireTienda = [{
         img: "css/imagenes/librocomoatraparestrella.jpg",
         info: "Autor: Oliver Jeffers"
     },
-     {
+    {
         id: 8,
         nombre: "Libro: Burundí",
         precio: 1100,
         img: "css/imagenes/libropabloburundi2.png",
         info: "Autor: Pablo Bernasconi"
-    } ,
+    },
     {
-       id: 9,
-       nombre: "Libro: El zoo de Joaquin",
-       precio: 600,
-       img: "css/imagenes/librozoodejoa.png",
-       info: "Autor: Pablo Bernasconi"
-   }, 
-   {
-    id: 10,
-    nombre: "Bloques para construir",
-    precio: 5000,
-    img: "css/imagenes/construccion.jpg",
-    info: "30 piezas imantadas de colores"
-},{
-    id: 11,
-    nombre: "Camara fotografica",
-    precio: 2000,
-    img: "css/imagenes/camarafotografica.jpg",
-    info: "material: madera"
-},{
-    id: 12,
-    nombre: "Muñecos de apego",
-    precio: 2000,
-    img: "css/imagenes/muñecosdeapego.jpg",
-    info: "25 bloques de colores"
-},{
-    id: 13,
-    nombre: "Set de juguetes mixtos",
-    precio: 2700,
-    img: "css/imagenes/setmaternal.png",
-    info: "de 1 a 3 años"
-},{
-    id: 14,
-    nombre: "Set cocina",
-    precio: 1700,
-    img: "css/imagenes/setcocina.png",
-    info: "material: plastico"
-},
-{
-    id: 15,
-    nombre: "Disfraz princesa ",
-    precio: 2700,
-    img: "css/imagenes/disfrazprincesa.png",
-    info: "color rosa - talles disponibles"
-},
+        id: 9,
+        nombre: "Libro: El zoo de Joaquin",
+        precio: 600,
+        img: "css/imagenes/librozoodejoa.png",
+        info: "Autor: Pablo Bernasconi"
+    },
+    {
+        id: 10,
+        nombre: "Bloques para construir",
+        precio: 5000,
+        img: "css/imagenes/construccion.jpg",
+        info: "30 piezas imantadas de colores"
+    }, {
+        id: 11,
+        nombre: "Camara fotografica",
+        precio: 2000,
+        img: "css/imagenes/camarafotografica.jpg",
+        info: "material: madera"
+    }, {
+        id: 12,
+        nombre: "Muñecos de apego",
+        precio: 2000,
+        img: "css/imagenes/muñecosdeapego.jpg",
+        info: "25 bloques de colores"
+    }, {
+        id: 13,
+        nombre: "Set de juguetes mixtos",
+        precio: 2700,
+        img: "css/imagenes/setmaternal.png",
+        info: "de 1 a 3 años"
+    }, {
+        id: 14,
+        nombre: "Set cocina",
+        precio: 1700,
+        img: "css/imagenes/setcocina.png",
+        info: "material: plastico"
+    },
+    {
+        id: 15,
+        nombre: "Disfraz princesa ",
+        precio: 2700,
+        img: "css/imagenes/disfrazprincesa.png",
+        info: "color rosa - talles disponibles"
+    },
 
 ]
 
 let carrito = []
 let contenedorCarrito = document.getElementById("contenedorCarrito"),
-mensajeCarrito2 = document.getElementById ("mensajeCarrito"),
-productosAgregados = document.getElementById ("productosAgregados")
+    mensajeCarrito2 = document.getElementById("mensajeCarrito"),
+    productosAgregados = document.getElementById("productosAgregados")
+
 
 let enterCart = (r) => {
 
     carrito.push(productosMireTienda.find((p) => p.id == r))
-    console.log (carrito)
+    console.log(carrito)
+    localStorage.setItem('carrito', JSON.stringify(carrito))
+
 
     mensajeCarrito2 = Toastify({
-        text:  "Agregaste productos al carrito" ,
+        text: "Agregaste productos al carrito",
         duration: 3000,
         destination: "https://github.com/apvarun/toastify-js",
         newWindow: true,
@@ -119,19 +122,34 @@ let enterCart = (r) => {
         position: "center", // `left`, `center` or `right`
         stopOnFocus: true, // Prevents dismissing of toast on hover
         style: {
-          background: "linear-gradient(to right, #EB1D36 , #EB1D36)",
+            background: "linear-gradient(to right, #EB1D36 , #EB1D36)",
         },
-        onClick: function(){} // Callback after click
-      }).showToast();
+        onClick: function () {} // Callback after click
+    }).showToast();
 }
 
 
- let eliminarCart = (id) => {
+let eliminarCart = (id) => {
 
     carrito = carrito.filter((p) => p.id != id)
     console.log(carrito)
+    localStorage.setItem('carrito', JSON.stringify(carrito))
+    mensajeCarrito2 = Toastify({
+        text: "Eliminaste un producto",
+        duration: 3000,
+        destination: "https://github.com/apvarun/toastify-js",
+        newWindow: true,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "center", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+            background: "linear-gradient(to right, #EB1D36 , #EB1D36)",
+        },
+        onClick: function () {} // Callback after click
+    }).showToast();
 }
- 
+
 
 let html = productosMireTienda.map((productos) => {
     return (
@@ -152,6 +170,4 @@ let html = productosMireTienda.map((productos) => {
 })
 
 contenedorCarrito.innerHTML = html
-
 console.log(carrito)
-
