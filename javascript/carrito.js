@@ -9,7 +9,7 @@ const productosMireTienda = [{
         id: 2,
         nombre: "Disfraz capa y antifaz",
         precio: 750,
-        img: "css/imagenes/disfraz.jpg",
+        img: "css/imagenes/disfraz.png",
         info: "talles disponibles"
     }, {
         id: 3,
@@ -76,6 +76,25 @@ const productosMireTienda = [{
     precio: 2000,
     img: "css/imagenes/muñecosdeapego.jpg",
     info: "25 bloques de colores"
+},{
+    id: 13,
+    nombre: "Set de juguetes mixtos",
+    precio: 2700,
+    img: "css/imagenes/setmaternal.png",
+    info: "de 1 a 3 años"
+},{
+    id: 14,
+    nombre: "Set cocina",
+    precio: 1700,
+    img: "css/imagenes/setcocina.png",
+    info: "material: plastico"
+},
+{
+    id: 15,
+    nombre: "Disfraz princesa ",
+    precio: 2700,
+    img: "css/imagenes/disfrazprincesa.png",
+    info: "color rosa - talles disponibles"
 },
 
 ]
