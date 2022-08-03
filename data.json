@@ -1,0 +1,101 @@
+ [{
+    
+    "id": "1",
+    "nombre": "Autos de madera",
+    "precio": "500",
+    "img": "css/imagenes/autos.jpg",
+    "info": "Madera laqueada"
+},
+{
+    "id": "2",
+    "nombre": "Disfraz capa y antifaz",
+    "precio": "750",
+    "img": "css/imagenes/disfraz.png",
+    "info": "talles disponibles"
+}, {
+    "id": "3",
+    "nombre": "Juego de encastre ",
+    "precio": "1200",
+    "img": "css/imagenes/encastre.jpg",
+    "info": "tuercas de colores"
+}, {
+    "id": "4",
+    "nombre": "Libro: Miedoso",
+    "precio": "850",
+    "img": "css/imagenes/libromiedoso.jpg",
+    "info": "Autor:Pablo Bernasconi"
+}, {
+    "id": "5",
+    "nombre": "Libro: Orejas de mariposa",
+    "precio": "1100",
+    "img": "css/imagenes/libromariposas.jfif",
+    "info": "Autora: Luisa Aguilar"
+},
+{
+    "id": "6",
+    "nombre": "Libro: Hipo no nada",
+    "precio": "1100",
+    "img": "css/imagenes/librohipononada.jfif",
+    "info": "Autor: Pablo Bernasconi"
+},
+{
+    "id": "7",
+    "nombre": "Libro: Como atrapar una estrella",
+    "precio": "1150",
+    "img": "css/imagenes/librocomoatraparestrella.jpg",
+    "info": "Autor: Oliver Jeffers"
+},
+{
+    "id": "8",
+    "nombre": "Libro: Burundí",
+    "precio": "1100",
+    "img": "css/imagenes/libropabloburundi2.png",
+    "info": "Autor: Pablo Bernasconi"
+},
+{
+    "id": "9",
+    "nombre": "Libro: El zoo de Joaquin",
+    "precio": "600",
+    "img": "css/imagenes/librozoodejoa.png",
+    "info": "Autor: Pablo Bernasconi"
+},
+{
+    "id": "10",
+    "nombre": "Bloques para construir",
+    "precio": "5000",
+    "img": "css/imagenes/construccion.jpg",
+    "info": "30 piezas imantadas de colores"
+}, {
+    "id": "11",
+    "nombre": "Camara fotografica",
+    "precio": "670",
+    "img": "css/imagenes/camarafotografica.jpg",
+    "info": "material: madera"
+}, {
+    "id": "12",
+    "nombre": "Muñecos de apego",
+    "precio": "890",
+    "img": "css/imagenes/muñecosdeapego.jpg",
+    "info": "25 bloques de colores"
+}, {
+    "id": "13",
+    "nombre": "Set de juguetes mixtos",
+    "precio": "2000",
+    "img": "css/imagenes/setmaternal.png",
+    "info": "de 1 a 3 años"
+}, {
+    "id": "14",
+    "nombre": "Set cocina",
+    "precio": "1780",
+    "img": "css/imagenes/setcocina.png",
+    "info": "material: plastico"
+},
+{
+    "id": "15",
+    "nombre": "Disfraz princesa ",
+    "precio": "2500",
+    "img": "css/imagenes/disfrazprincesa.png",
+    "info": "color rosa - talles disponibles"
+}
+
+]
