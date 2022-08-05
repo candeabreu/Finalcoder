@@ -720,4 +720,43 @@ form .boton .botonEnviar:hover {
   padding: 2%;
 }
 
+#finCompra {
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+}
+.formComprar {
+  display: flex;
+  justify-content: center;
+  font-family:  "Text Me One", sans-serif;
+}
+
+.botonConfirmarCompra {
+  margin: 3%;
+  color: black;
+  background-color:bisque;
+ font-family: "tipografiaNueva";
+ width: 120px; 
+ display: flex;
+ justify-content: center;
+ 
+}
+
+.cajaBtn {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  padding-top: 6%;
+}
+.tituloFinalizarCompra {
+  font-family: "tipografiaNueva";
+  font-size: 30px;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+.formularioCompra {
+  padding: 0%;
+}
 /*# sourceMappingURL=style.css.map */

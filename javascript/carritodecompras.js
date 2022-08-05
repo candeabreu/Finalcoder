@@ -76,7 +76,7 @@ function resumenDePago () {
  const resumenHtml = `<div class="cajaResumen"><h3 class="tituloResumen">Resumen:</h3>
  <br><p class="textoResumen">Total: $${total}</p>
  </div>
- <div class="cajaBotonComprar"><br><button type="button" class="btnComprar">Comprar</button></div>
+ <div class="cajaBotonComprar"><br><a href="/finalizarcompra.html"><button type="button" class="btnComprar">Comprar</button></a></div>
  `
  resumen.innerHTML+= resumenHtml
 
