@@ -1,14 +1,14 @@
-async function fetchProductos () {
+async function fetchProductos() {
     const respuesta = await fetch('../data.json')
-    return await respuesta.json ()
+    return await respuesta.json()
 }
 
-const sectionProductos = document.getElementById ("contenedorCarrito")
+const sectionProductos = document.getElementById("contenedorCarrito")
 
-function mostrarCatalogo () {
+function mostrarCatalogo() {
     for (producto of catalogo) {
-        const {id, nombre, precio, img, info} = producto
-        const html3 =  `
+        const { id, nombre, precio, img, info} = producto
+        const html3 = `
         <div class="card gridCarrito col-4" style="width: 18rem;">
             <img src=${img} class="card-img-top imagenesCarrito" alt="imagenes" id: "imagenesdelCarrito">
             <div class="card-body contenedor">
@@ -16,47 +16,55 @@ function mostrarCatalogo () {
               <p class="card-text">${info} <br> $${precio}</p>
               <button type="button" onClick= "sumarAlCarrito(${id})"class="btn btn-light btnCarrito" id="btnCarrito">Agregar al
                     carrito</button>
-                
             </div>
           </div>`
-          sectionProductos.innerHTML += html3
-          
+        sectionProductos.innerHTML += html3
     }
 }
 
 let catalogo = []
- fetchProductos().then(productos => {
+fetchProductos().then(productos => {
     catalogo = productos
-    mostrarCatalogo ()
- })
+    mostrarCatalogo()
+})
 
-let carrito = JSON.parse (localStorage.getItem('carrito')) || []
+const carrito = JSON.parse(localStorage.getItem('carrito')) || []
 
-function sumarAlCarrito (id) {
-const producto = catalogo.find (p=> p.id == id) 
-carrito.push(producto)
-console.log (carrito)
-mostrarNotificacion ()
-guardarEnElCarrio ()
+function sumarAlCarrito(id) {
+    const producto = catalogo.find(producto => producto.id == id)
+
+    if (carrito.find(producto => producto.id === id)) {
+        const producto = carrito.find(producto => producto.id === id)
+        producto.cantidad++
+    } else {
+        carrito.push ({
+            ...producto,
+            cantidad: 1
+         }
+        )
+    }
+    console.log(carrito)
+    mostrarNotificacion(`${producto.nombre} fue agregado al carrito`)
+    guardarEnElCarrito()
 }
 
-function mostrarNotificacion () {
+function mostrarNotificacion(mensaje) {
     Toastify({
-        text: "Agregaste un producto al carrito",
+        text: mensaje,
         duration: 3000,
-        destination: "https://github.com/apvarun/toastify-js",
+        destination: './carrito.html',
         newWindow: true,
         close: true,
-        gravity: "top", // `top` or `bottom`
-        position: "center", // `left`, `center` or `right`
-        stopOnFocus: true, // Prevents dismissing of toast on hover
+        gravity: "top", 
+        position: "center", 
+        stopOnFocus: true, 
         style: {
             background: "linear-gradient(to right, #EB1D36 , #EB1D36)",
         },
-        onClick: function () {} // Callback after click
+        onClick: function () {} 
     }).showToast();
 
 }
-function guardarEnElCarrio () {
+function guardarEnElCarrito() {
     localStorage.setItem('carrito', JSON.stringify(carrito))
 }

@@ -664,4 +664,60 @@ form .boton .botonEnviar:hover {
  font-family: "tipografiaNueva";
  
 }
+
+.seccionCarrito {
+  background-color: rgba(255, 255, 0, 0.582);
+  color: black;
+}
+
+#imagenesdelCarrito {
+  margin: auto auto;
+  width: 200px;
+  height: 200px;
+  left: 20px;
+}
+
+.cajaResumen {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.tituloResumen {
+  font-family: "tipografiaNueva";
+  font-size: 20px;
+
+}
+
+.textoResumen {
+  font-family: "Text Me One", sans-serif;
+  font-size: 20px;
+
+}
+
+.btnComprar {
+  margin: 0;
+  color: black;
+  background-color:bisque;
+ font-family: "tipografiaNueva";
+ width: 120px;
+}
+
+.cajaBotonComprar {
+  display: flex;
+  justify-content: center;
+  
+
+}
+
+#seccionResumenDePago {
+  background-color: #f3ea6d;
+  padding: 2%;
+
+}
+
+#productosAgregados {
+  padding: 2%;
+}
+
 /*# sourceMappingURL=style.css.map */

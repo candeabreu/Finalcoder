@@ -12,8 +12,8 @@
     <!-- CSS BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-<!-- toastify css -->
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- toastify css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -32,31 +32,37 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light navNuevo">
             <div class="container-fluid">
-              <a class="navbar-brand" href="index.html"> <img src="css/imagenes/logomiresinfondo.png" alt="logomire"
-                  class="logoNavbar"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse opcionesMenu" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link active opcionesNav" aria-current="page" href="index.html">Inicio</a>
-                  <a class="nav-link opcionesNav" href="Nosotros.html">Nosotros</a>
-                  <a class="nav-link opcionesNav" href="alquilerdeespacios.html">Alquiler de espacios</a>
-                  <a class="nav-link opcionesNav" href="carritocompras.html">Productos</a>
-                  <a class="nav-link opcionesNav" href="contacto.html">Contacto</a>
-                 
+                <a class="navbar-brand" href="index.html"> <img src="css/imagenes/logomiresinfondo.png" alt="logomire"
+                        class="logoNavbar"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse opcionesMenu" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active opcionesNav" aria-current="page" href="index.html">Inicio</a>
+                        <a class="nav-link opcionesNav" href="Nosotros.html">Nosotros</a>
+                        <a class="nav-link opcionesNav" href="alquilerdeespacios.html">Alquiler de espacios</a>
+                        <a class="nav-link opcionesNav" href="carritocompras.html">Productos</a>
+                        <a class="nav-link opcionesNav" href="contacto.html">Contacto</a>
+
+                    </div>
+                    <div class="imagenCarritoPadre">
+                        <a href="carrito.html"><img src="./css/imagenes/imgcarrito.png" alt="logocarrito"
+                                class="iconoCarrito"></a>
+                    </div>
                 </div>
-                <div class="imagenCarritoPadre">
-                <a href="carrito.html"><img src="../proyectofinal/css/imagenes/imgcarrito.webp" alt="logoCarrito" class="iconoCarrito"></a>
-              </div>
-              </div>
             </div>
-          </nav>
+        </nav>
     </header>
     <main>
         <h1 class="tituloCarrito">Carrito de compras </h1>
-        <section id="productosAgregados"></section>
+        <div class="cantainer">
+            <section id="productosAgregados" class="carritoMain row"></section>
+        </div>
+        
+        <div id="seccionResumenDePago"></div>
     </main>
     <!-- FOOTER -->
     <footer class="pieDePagina">
@@ -97,10 +103,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
     </script>
-<!-- SCRIPT TOASTIFY -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-<!-- SCROPT SWEET ALERT -->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.24/dist/sweetalert2.all.min.js"></script>
+    <!-- SCRIPT TOASTIFY -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- SCROPT SWEET ALERT -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.24/dist/sweetalert2.all.min.js"></script>
     <!-- JAVASCRIPT -->
     <script src="./javascript/carritodecompras.js"></script>
 </body>
