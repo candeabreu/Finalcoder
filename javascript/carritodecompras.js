@@ -1,6 +1,6 @@
 const carrito = JSON.parse(localStorage.getItem('carrito')) || []
 const sectionCarrito = document.getElementById("productosAgregados")
-
+/* CARRITO - PRODUCTOS EN HTML */
 function mostrarCarrito() {
     sectionCarrito.innerHTML = "";
     if (carrito.length == 0) {
@@ -22,7 +22,8 @@ function mostrarCarrito() {
               <button type="button" onClick= "eliminarDelCarrito(${id})"class="btn btn-light btnCarrito" id="btnCarrito">Eliminar del
                     carrito</button>
             </div>
-          </div>`
+          </div>
+         `
       sectionCarrito.innerHTML+=productohtml
     }
 } 
@@ -30,11 +31,13 @@ function mostrarCarrito() {
 
 mostrarCarrito()
 
+/* ELIMINAR DEL CARRITO */
+
 function eliminarDelCarrito (id) {
   const producto = carrito.find (producto => producto.id == id) 
-    if (producto.cantidad === 1){
+    if (producto.cantidad == 1){
 
-      carrito.splice(carrito.findIndex (producto => producto.id === id),1)
+      carrito.splice(carrito.findIndex (producto => producto.id == id),1)
     } else {
       producto.cantidad--
     }
@@ -67,22 +70,31 @@ function notificacionEliminar (mensaje) {
 
 }
 
+/* RESUMEN DE PAGO */
 
 const resumen = document.getElementById ("seccionResumenDePago")  
+let botonHTMLcomprar ;
+if (carrito.length==0){
+  botonHTMLcomprar= `<a href="/finalizarcompra.html"><button type="button" disabled class="btnComprar">Comprar</button></a>`
+} else {
+  botonHTMLcomprar= `<a href="/finalizarcompra.html"><button type="button" class="btnComprar">Comprar</button></a>`
+}
 
 function resumenDePago () {
  resumen.innerHTML=""
  const total = calcularTotal()
- const resumenHtml = `<div class="cajaResumen"><h3 class="tituloResumen">Resumen:</h3>
- <br><p class="textoResumen">Total: $${total}</p>
- </div>
- <div class="cajaBotonComprar"><br><a href="/finalizarcompra.html"><button type="button" class="btnComprar">Comprar</button></a></div>
+ const resumenHtml = `<div class="cajaResumen"><h3 class="tituloResumen">Resumen:</h3><br></div>
+ <div><p class="textoResumen">Total: $${total}</p></div>
+ 
+ <div class="cajaBotonComprar"><br> ${botonHTMLcomprar}</div>
+ 
  `
  resumen.innerHTML+= resumenHtml
 
 }
 
 resumenDePago ()
+/* FUNCION CALCULAR PRECIO */
 
 function calcularTotal () {
   let total = 0
@@ -91,5 +103,10 @@ function calcularTotal () {
     }
     return total
 }
+
+
+
+
+
 
 

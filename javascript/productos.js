@@ -7,7 +7,13 @@ const sectionProductos = document.getElementById("contenedorCarrito")
 
 function mostrarCatalogo() {
     for (producto of catalogo) {
-        const { id, nombre, precio, img, info} = producto
+        const {
+            id,
+            nombre,
+            precio,
+            img,
+            info
+        } = producto
         const html3 = `
         <div class="card gridCarrito col-4" style="width: 18rem;">
             <img src=${img} class="card-img-top imagenesCarrito" alt="imagenes" id: "imagenesdelCarrito">
@@ -17,7 +23,8 @@ function mostrarCatalogo() {
               <button type="button" onClick= "sumarAlCarrito(${id})"class="btn btn-light btnCarrito" id="btnCarrito">Agregar al
                     carrito</button>
             </div>
-          </div>`
+          </div>
+          `
         sectionProductos.innerHTML += html3
     }
 }
@@ -31,17 +38,18 @@ fetchProductos().then(productos => {
 const carrito = JSON.parse(localStorage.getItem('carrito')) || []
 
 function sumarAlCarrito(id) {
+    const cantidadCarrito = document.getElementById("numeroCarrito");
+    cantidadCarrito.innerText = carrito.length
     const producto = catalogo.find(producto => producto.id == id)
 
-    if (carrito.find(producto => producto.id === id)) {
-        const producto = carrito.find(producto => producto.id === id)
+    if (carrito.find(producto => producto.id == id)) {
+        const producto = carrito.find(producto => producto.id == id)
         producto.cantidad++
     } else {
-        carrito.push ({
+        carrito.push({
             ...producto,
             cantidad: 1
-         }
-        )
+        })
     }
     console.log(carrito)
     mostrarNotificacion(`${producto.nombre} fue agregado al carrito`)
@@ -55,16 +63,17 @@ function mostrarNotificacion(mensaje) {
         destination: './carrito.html',
         newWindow: true,
         close: true,
-        gravity: "top", 
-        position: "center", 
-        stopOnFocus: true, 
+        gravity: "top",
+        position: "center",
+        stopOnFocus: true,
         style: {
             background: "linear-gradient(to right, #EB1D36 , #EB1D36)",
         },
-        onClick: function () {} 
+        onClick: function () {}
     }).showToast();
 
 }
+
 function guardarEnElCarrito() {
     localStorage.setItem('carrito', JSON.stringify(carrito))
 }
