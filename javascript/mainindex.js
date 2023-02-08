@@ -20,6 +20,7 @@ formularioBienvenida.addEventListener ("submit" , (e)=> {
    
     if (nombreDeIngresoBienvenida.value == "") {
         h2.innerText =`TE DAMOS LA BIENVENIDA ${nombreDeIngresoBienvenida.value} A MIRE TIENDA DE NIÑOS/AS - 3 Y 6 CUOTAS SIN INTERES `;
+       
     } 
 })
  

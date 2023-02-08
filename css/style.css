@@ -38,6 +38,16 @@ header .navNuevo .container-fluid .logoNavbar {
     display: none;
   }
 }
+.imagenCarritoPadre {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+.imagenCarritoPadre .iconoCarrito {
+  width: 40px;
+  position: relative;
+}
+
 /* Mapas */
 /*FOOTER*/
 .pieDePagina {
@@ -146,6 +156,39 @@ main .imagenCarrito .carritoCompras:hover {
   transition: all 2s;
 }
 
+.formularioDeBienvenida2 {
+  font-size: 20px;
+  font-family: "tipografiaNueva";
+  display: flex;
+  justify-content: center;
+}
+.formularioDeBienvenida2 .opcionFormularioBienvenida {
+  position: relative;
+  left: 20%;
+  padding-top: 3%;
+}
+
+.botonBienvenida {
+  display: flex;
+  justify-content: center;
+  font-family: "tipografiaNueva";
+  font-size: 10px;
+  padding: 11px;
+  color: black;
+}
+.botonBienvenida #btnOk {
+  width: 100px;
+  color: black;
+}
+
+.parrafoBienvenida2 {
+  font-family: "tipografiaNueva";
+  font-size: 25px;
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+}
+
 .contenidoPrincipal {
   display: flex;
   justify-content: center;
@@ -182,36 +225,10 @@ main .imagenCarrito .carritoCompras:hover {
   padding-top: 20px;
 }
 
-/* GRID GALERIA PRODUCTOS */
-.galeriaProductos {
-  width: auto;
-  height: auto;
-  background-color: #FCF7BB;
-  display: grid;
-  grid-template-rows: 380px 380px 380px;
-  grid-template-columns: 380px 380px 380px;
-  justify-content: center;
-  column-gap: 10px;
-  row-gap: 10px;
-  padding: 20px;
-}
-.galeriaProductos .productosItem {
-  width: 350px;
-  height: 350px;
-  -webkit-box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.49);
-  -moz-box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.49);
-  box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.49);
-}
-.galeriaProductos .productosItem:hover {
-  z-index: 2;
-  width: 400px;
-  height: 400px;
-  transition: all 2s;
-}
-
 /*MAIN ALQUILER DE ESPACIOS*/
 .mainAlquilerDeEspacios {
   background-color: #FCF7BB;
+  background-image: url(/css/imagenes/fondoprobar.png);
   display: flex;
   justify-content: center;
   height: auto;
@@ -502,22 +519,18 @@ form .boton .botonEnviar:hover {
   display: flex;
   font-family: "tipografiaNueva";
   text-align: center;
-  width: 100vw;
-
 }
 .mainCarritoDeCompras .carritoMain .gridCarrito {
   -webkit-box-shadow: 2px -1px 36px -15px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 2px -1px 36px -15px rgba(0, 0, 0, 0.75);
   box-shadow: 2px -1px 36px -15px rgba(0, 0, 0, 0.75);
-  display: flex;
-  justify-content: center;
-  margin: 2%;
+  width: 13vw;
 }
 .mainCarritoDeCompras .carritoMain .gridCarrito .imagenesCarrito {
-  margin: auto auto;
-  width: 200px;
-  height: 200px;
-  left: 20px;
+  display: flex;
+  justify-items: center;
+  width: 250px;
+  height: 250px;
 }
 
 .mainCarritoDeCompras .carritoMain .gridCarrito {
@@ -539,234 +552,21 @@ form .boton .botonEnviar:hover {
   font-family: "tipografiaNueva";
 }
 
-
-/*EDICION ELEMENTOS JAVA*/
-.parrafoBienvenida2 {
+.tituloCarrito {
   font-family: "tipografiaNueva";
   font-size: 25px;
-  display: flex;
-  justify-content: center;
-  padding: 1%;
+  text-align: center;
 }
 
-.mensajeEnviar2 {
-  font-family: "tipografiaNueva";
-  font-size: 25px;
-  display: flex;
-  justify-content: center;
-  margin: 0%;
-
-}
-#areaDeMensaje {
-  font-family: "tipografiaNueva";
-  font-size: 25px;
-  display: flex;
-  justify-content: center;
-  margin: 0%;
-}
- /*EDICION FORMULARIO*/
-.formularioDeBienvenida2 {
-  display: flex;
-  justify-content: center;
-  
-}
-.nombreBienvenida {
-  height: 25px;
-  padding: 4px;
-}
- .opcionFormularioBienvenida {
-  font-family: "tipografiaNueva";
-  font-size: 20px;
-
- }
-.botonBienvenida {
-  display: flex;
-  justify-content: center;
-  font-family: "tipografiaNueva";
-  font-size: 10px;
-  padding: 4px;
-  
- 
-}
-
-.carritoMain {
-  display: flex;
+.cantainer .carritoMain {
   font-family: "tipografiaNueva";
   text-align: center;
-  justify-content: center;
-
 }
 
-.iconoCarrito {
-  width: 40px;
-  position: relative;
-  
-}
-
-.imagenCarritoPadre {
-  display: flex;
-  justify-content: flex-end;
-  width: 50%;
-
-}
-
-/*EDICION CARRITO*/
-.tituloCarrito {
+.resumen {
   font-family: "tipografiaNueva";
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  padding: 3px;
 }
 
-.textoCarrito {
-  font-family: "tipografiaNueva";
-  display: flex;
-  justify-content: center;
-}
-
-.tituloCarritoCard {
-  font-family: "tipografiaNueva";
-  display: flex;
-  justify-content: center;
-}
-
-.carritoNuevo {
-  font-family: "tipografiaNueva";
-  display: flex;
-  justify-content: center;
-}
-
-.btnEliminar {
-  margin: 3%;
-  color: black;
-  background-color:bisque;
- font-family: "tipografiaNueva";
- display: flex;
- justify-content: center;
-}
-
-.textoCarritoVacio {
-  font-family: "Text Me One", sans-serif;
- display: flex;
- justify-content: center;
- font-size: 25px;
- margin: 0%;
- padding: 2%;
-}
-.botonVolver {
-  display: flex;
-  justify-content: center;
-  padding: 2%;
-}
-.btnVolver {
-  margin: 0;
-  color: black;
-  background-color:bisque;
- font-family: "tipografiaNueva";
- 
-}
-
-.seccionCarrito {
-  background-color: rgba(255, 255, 0, 0.582);
-  color: black;
-}
-
-#imagenesdelCarrito {
-  margin: auto auto;
-  width: 200px;
-  height: 200px;
-  left: 20px;
-}
-
-.cajaResumen {
-  display: flex;
-  justify-content: center;
-  
-}
-
-.tituloResumen {
-  font-family: "tipografiaNueva";
-  font-size: 20px;
-
-}
-
-.textoResumen {
-  font-family: "Text Me One", sans-serif;
-  font-size: 20px;
-  display: flex;
-  justify-content: center;
-
-}
-
-.btnComprar {
-  margin: 0;
-  color: black;
-  background-color:bisque;
- font-family: "tipografiaNueva";
- width: 120px;
-}
-
-.cajaBotonComprar {
-  display: flex;
-  justify-content: center;
-  
-
-}
-
-#seccionResumenDePago {
-  background-color: #f3ea6d;
-  padding: 2%;
-
-}
-
-#productosAgregados {
-  padding: 2%;
-}
-
-#finCompra {
-  display: flex;
-  justify-content: center;
-  padding: 1%;
-}
-.formComprar {
-  display: flex;
-  justify-content: center;
-  font-family:  "Text Me One", sans-serif;
-}
-
-.botonConfirmarCompra {
-  margin: 3%;
-  color: black;
-  background-color:bisque;
- font-family: "tipografiaNueva";
- width: 120px; 
- display: flex;
- justify-content: center;
- 
-}
-
-.cajaBtn {
-  display: flex;
-  justify-content: center;
-  padding: 2%;
- 
-}
-.tituloFinalizarCompra {
-  font-family: "tipografiaNueva";
-  font-size: 30px;
-  padding: 2%;
-  display: flex;
-  justify-content: center;
-}
-
-.formularioCompra {
-  padding: 0%;
-}
-
-#numeroCarrito {
-  font-family:  "Text Me One", sans-serif;
-}
-
-.tituloCarrito {
-  padding-top: 2%;
-}
 /*# sourceMappingURL=style.css.map */

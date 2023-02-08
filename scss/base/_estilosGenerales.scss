@@ -11,15 +11,28 @@
     position: fixed;
     bottom: 5%;
     right: 5%;
-    z-index: 2
+    z-index: 2;
 }
 
 
 
 @media screen and (max-width:450px) {
     .logoWapp2 {
-       
+
         display: none;
+    }
+
+}
+
+.imagenCarritoPadre {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+
+    .iconoCarrito {
+        width: 40px;
+        position: relative;
+
     }
 
 }

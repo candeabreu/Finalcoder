@@ -5,6 +5,7 @@
 
 .mainAlquilerDeEspacios {
     background-color: #FCF7BB;
+    background-image: url(/css/imagenes/fondoprobar.png);
     @include flex(flex, center);
     height: auto;
     display: grid;

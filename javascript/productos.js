@@ -3,7 +3,7 @@ async function fetchProductos() {
     return await respuesta.json()
 }
 
-const sectionProductos = document.getElementById("contenedorCarrito")
+const sectionProductos = document.getElementById ("contenedorCarrito")
 
 function mostrarCatalogo() {
     for (producto of catalogo) {
@@ -14,7 +14,7 @@ function mostrarCatalogo() {
             img,
             info
         } = producto
-        const html3 = `
+        const html3 =  `
         <div class="card gridCarrito col-4" style="width: 18rem;">
             <img src=${img} class="card-img-top imagenesCarrito" alt="imagenes" id: "imagenesdelCarrito">
             <div class="card-body contenedor">

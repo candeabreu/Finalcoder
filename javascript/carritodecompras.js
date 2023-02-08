@@ -16,7 +16,7 @@ function mostrarCarrito() {
         const productohtml = `
         <div class="card gridCarrito col-4" style="width: 18rem;">
             <img src=${img} class="card-img-top imagenesCarrito" alt="imagenes" id= "imagenesdelCarrito">
-            <div class="card-body contenedor">
+            <div class="card-body contenedor tarjetaProductos">
               <h5 class="card-title"> ${nombre}</h5>
               <p class="card-text">${info} <br> $${precio} <br> Cantidad: ${cantidad}</p>
               <button type="button" onClick= "eliminarDelCarrito(${id})"class="btn btn-light btnCarrito" id="btnCarrito">Eliminar del

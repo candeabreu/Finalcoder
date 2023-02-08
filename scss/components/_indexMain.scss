@@ -104,3 +104,44 @@ main {
         }
     }
 }
+
+
+.formularioDeBienvenida2 {
+
+    font-size: 20px;
+    font-family: "tipografiaNueva";
+    display: flex;
+    justify-content: center;
+
+    .opcionFormularioBienvenida {
+        position: relative;
+        left: 20%;
+        padding-top: 3%;
+
+    }
+}
+
+.botonBienvenida {
+    display: flex;
+    justify-content: center;
+    font-family: "tipografiaNueva";
+    font-size: 10px;
+    padding: 11px;
+    color: black;
+
+    #btnOk {
+        width: 100px;
+        color: black;
+    }
+
+}
+
+.parrafoBienvenida2 {
+    font-family: "tipografiaNueva";
+    font-size: 25px;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+
+
+}
